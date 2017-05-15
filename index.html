@@ -6,11 +6,19 @@
 <body>
 
 <div id="app">
-  {{ message }}
+
+  <input type="text" v-model="searchInput"/>
+  <ul>
+    <li v-for="p in projects">
+    {{ p.name }}
+    </li>
+  </ul>
+
 </div>
 
 
 <script src="https://unpkg.com/vue"></script>
+<script src="js/data.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
