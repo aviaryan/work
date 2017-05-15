@@ -2,17 +2,29 @@
 <html>
 <head>
 	<title>Showcase</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
-<div id="app">
+<div id="app" class="container">
 
-  <input type="text" v-model="searchInput"/>
-  <ul>
-    <li v-for="p in projects">
-    {{ p.name }}
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col s6 offset-s6">
+      <input type="text" placeholder="Search" v-model="searchInput"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s4" v-for="p in projects">
+      {{ p.name }}
+    </div>
+  </div>
 
 </div>
 
@@ -20,5 +32,11 @@
 <script src="https://unpkg.com/vue"></script>
 <script src="js/data.js"></script>
 <script src="js/script.js"></script>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
 </body>
 </html>
