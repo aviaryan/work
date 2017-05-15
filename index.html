@@ -22,7 +22,18 @@
 
   <div class="row">
     <div class="col s4" v-for="p in projects">
-      {{ p.name }}
+    <!-- project -->
+      <div class="card blue-grey" :class="['project-' + p.id]">
+        <div class="card-content white-text">
+          <span class="card-title">{{ p.name }}</span>
+          <p>project description</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    <!-- project -->
     </div>
   </div>
 
@@ -35,8 +46,13 @@
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- Compiled and minified JavaScript -->
+<!-- Materialize JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<!-- Geopattern -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 
+<script type="text/javascript">initPage()</script>
+
+</script>
 </body>
 </html>
