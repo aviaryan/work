@@ -1,3 +1,5 @@
+var BODYLIMIT = 120;
+
 // Vue.js app
 
 var app = new Vue({
@@ -9,6 +11,15 @@ var app = new Vue({
 	watch: {
 		searchInput: function(val, oldVal){
 			searchProjects(val)
+		}
+	},
+	filters: {
+		wrapBody: function(text){
+			if (text.length > BODYLIMIT){
+				return text.substr(0, BODYLIMIT) + '...'
+			} else {
+				return text
+			}
 		}
 	}
 })
@@ -37,13 +48,14 @@ function searchProjects(query){
  */
 function setPatterns(){
 	for (let p of app.projects){
-		var pattern = GeoPattern.generate(p.name);
-		$('.project-' + p.id).css('background-image', pattern.toDataUrl());
+		var pattern = GeoPattern.generate(p.name)
+		$('.project-' + p.id).css('background-image', pattern.toDataUrl())
 	}
 }
 
 /*
  * initPage
+ * initializes the page once all deps have been loaded
  */
 function initPage(){
 	setPatterns()

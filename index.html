@@ -6,6 +6,7 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Import materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -23,14 +24,27 @@
   <div class="row">
     <div class="col s4" v-for="p in projects">
     <!-- project -->
-      <div class="card blue-grey" :class="['project-' + p.id]">
+      <div class="card half-blue" :class="['project-' + p.id]">
         <div class="card-content white-text">
+          <!-- title -->
           <span class="card-title">{{ p.name }}</span>
-          <p>project description</p>
+
+          <div class="card-after-title">
+            <!-- desc -->
+            <p>{{ p.desc | wrapBody }}</p>
+            <!-- tag -->
+            <div class="tag-area">
+              <div class="chip" v-for="t in p.tags">
+                {{t}} <i class="close material-icons">close</i>
+              </div>
+            </div>
+            <!-- end tag -->
+          </div>
+          <!-- end card content-->
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+          <a href="#">GITHUB</a>
+          <a href="#">WEB</a>
         </div>
       </div>
     <!-- project -->
