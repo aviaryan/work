@@ -2,6 +2,12 @@
 
 My portfolio. Built with React.
 
+### Dev
+
+```sh
+yarn install
+yarn start
+```
 
 #### Resources
 
