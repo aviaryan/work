@@ -1,9 +1,10 @@
 const webpack = require('webpack')
 
 module.exports = {
-	entry: [
-		'./src/index.jsx'
-	],
+	entry: {
+		app: './src/index.jsx',
+		vendor: ['react', 'react-dom']
+	},
 	module: {
 		loaders: [{
 			test: /\.jsx?$/,
@@ -17,8 +18,8 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 
-	// minify: https://webpack.js.org/guides/production-build/
 	plugins: [
+		// minify: https://webpack.js.org/guides/production-build/
 		new webpack.LoaderOptionsPlugin({
 			minimize: true,
 			debug: false
@@ -33,6 +34,8 @@ module.exports = {
 				screw_ie8: true
 			},
 			comments: false
-		})
+		}),
+		// vendor: https://webpack.github.io/docs/code-splitting.html#split-app-and-vendor-code
+		new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
 	]
 };
