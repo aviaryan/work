@@ -1,8 +1,11 @@
 .project {
-	width: 31%;
+	width: 30%;
 	margin-top: 1rem;
 	padding: 0.5rem;
 	border: 1px solid #7d97ad;
+	/** this is tricky, can't rely on justify-content **/
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
 	z-index: 2;
 }
 

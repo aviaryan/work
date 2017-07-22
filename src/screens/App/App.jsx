@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header.jsx'
 import Project from '../../components/Project/Project.jsx'
 import styles from './App.css'
 
+import lib from '../../lib/utils.js'
 import projects from '../../data/projects.js'
 
 
@@ -14,20 +15,27 @@ export default class App extends Component {
 		this.state = {
 			projects: projects
 		};
+		this.inputChange = this.inputChange.bind(this);
+	}
+
+	inputChange(event) {
+		this.setState({
+			projects: lib.filterProjects(projects, event.target.value)
+		});
 	}
 
 	render() {
-		let project = this.state.projects.map((p) =>
+		let projectDOM = this.state.projects.map((p) =>
 			<Project {...p}/>
 		);
 		return (
 			<div className={styles.app}>
 				<header className={styles.headerDiv}>
 					<Header/>
-					<Search/>
+					<Search changeHandler={this.inputChange}/>
 				</header>
 				<div className={styles.content}>
-					{project}
+					{projectDOM}
 				</div>
 			</div>
 		)
