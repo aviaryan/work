@@ -1,8 +1,10 @@
 .search {
 	border-top: 0;
 	border-right: 0;
-	font-size: 12px;
+	font-size: 1rem;
 	border-left: 0;
+	width: 60%;
+	max-width: 600px;
 }
 
 .search:focus {
