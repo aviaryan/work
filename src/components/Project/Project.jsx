@@ -12,7 +12,7 @@ export default class Project extends Component {
 
 	componentDidMount() {
 		let pattern = GeoPattern.generate(this.props.name, {
-			baseColor: '#cdefa1'
+			baseColor: '#d2f998'
 		});
 		document.getElementsByClassName(this.props.id)[0].style.backgroundImage = pattern.toDataUrl();
 	}
@@ -34,6 +34,7 @@ export default class Project extends Component {
 				</div>
 				}
 				<div className={styles.projectDesc}>{this.props.desc}</div>
+				<div className={styles.emptySpace} />
 				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)

@@ -6,8 +6,9 @@
 	/** this is tricky, can't rely on justify-content **/
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
-	font-weight: normal;
-	height: 150px;
+	height: 170px;
+	display: flex;
+	flex-direction: column;
 }
 
 .projectTitle {
@@ -25,14 +26,12 @@
 
 .projectTags {
 	margin-top: 1rem;
-	margin-bottom: 1rem;
 }
 
 .projectLinks {
 	margin-left: 1rem;
 }
 
-.logo {
-	width: 1rem;
-	height: 1rem;
+.emptySpace {
+	flex-grow: 100;
 }

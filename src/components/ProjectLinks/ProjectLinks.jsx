@@ -9,7 +9,7 @@ export default class ProjectLinks extends Component {
 		let websitesDOM;
 		if (this.props.websites) {
 			websitesDOM = this.props.websites.map((w) =>
-				<a href={w} target="_blank">
+				<a key={w} href={w} target="_blank">
 					<img className={styles.logo} src="../../../img/link-symbol.svg" />
 				</a>
 			);
