@@ -2,6 +2,9 @@
 	margin: 2rem auto 0 auto;
 	width: 95%;
 	max-width: 1200px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 	font-family: "Raleway", "Times New Roman", sans-serif;
 }
 
@@ -16,5 +19,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/*justify-content: space-between;*/
+	flex-basis: 100%;
+}
+
+.footerDiv {
+	font-size: 0.9rem;
+	margin-top: 2rem;
+	color: slategray;
 }

@@ -37,6 +37,9 @@ export default class App extends Component {
 				<div className={styles.content}>
 					{projectDOM}
 				</div>
+				<footer className={styles.footerDiv}>
+					<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a></div>
+				</footer>
 			</div>
 		)
 	}

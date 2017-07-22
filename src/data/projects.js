@@ -3,27 +3,31 @@ export default [
 		id: 'clipjump',
 		name: 'Clipjump',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		website: 'https://bit.ly/clipjump',
+		github: 'https://github.com/aviaryan/Clipjump',
+		websites: ['https://bit.ly/clipjump'],
 		tags: ['autohotkey', 'software']
 	},
 	{
 		id: 'shach',
 		name: 'Shach',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		website: 'https://github.com/aviaryan/shach',
+		github: 'https://github.com/aviaryan/Clipjump',
+		websites: ['https://github.com/aviaryan/shach'],
 		tags: ['compiler']
 	},
 	{
 		id: 'su4ahk',
 		name: 'Sublime 4 AutoHotkey',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		website: 'http://git.io',
+		github: 'https://github.com/aviaryan/Clipjump',
+		websites: ['http://git.io'],
 		tags: ['autohotkey', 'sublime-text', 'text-editor']
 	},
 	{
 		id: 'hinix',
 		name: 'Hinix',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		github: 'https://github.com/aviaryan/Clipjump',
 		tags: ['android']
 	},
 	{
