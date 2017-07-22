@@ -4,6 +4,7 @@ export default {
    */
 	filterProjects: (projects, query) => {
 		let p = [];
+		query = query.toLowerCase(); // lower case better searching
 		let qrArr = query.split(' ');
 		let fail = false;
 		for (let i of projects) {
@@ -11,7 +12,7 @@ export default {
 			fail = false;
 			for (let q of qrArr) {
 				// take single query
-				let check = (i['name'].search(q) > -1) || (JSON.stringify(i['tags']).search(q) > -1);
+				let check = (i['name'].toLowerCase().search(q) > -1) || (JSON.stringify(i['tags']).search(q) > -1);
 				if (!check) {
 					fail = true;
 					break;

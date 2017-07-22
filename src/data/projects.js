@@ -11,37 +11,38 @@ export default [
 	{
 		id: 'shach',
 		name: 'Shach',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		github: 'https://github.com/aviaryan/Clipjump',
-		websites: ['https://github.com/aviaryan/shach'],
-		tags: ['compiler']
+		desc: 'Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.',
+		github: 'https://github.com/aviaryan/shach',
+		tags: ['compiler', 'cpp']
 	},
 	{
 		id: 'su4ahk',
 		name: 'Sublime 4 AutoHotkey',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		desc: 'A Sublime Text addon to do AutoHotkey coding in the editor. Provides much more than a Sublime Text package.',
 		github: 'https://github.com/aviaryan/Clipjump',
 		websites: ['http://git.io'],
-		tags: ['autohotkey', 'sublime-text', 'text-editor']
+		tags: ['autohotkey', 'sublime-text']
 	},
 	{
 		id: 'hinix',
 		name: 'Hinix',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		desc: 'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
 		github: 'https://github.com/aviaryan/Clipjump',
-		tags: ['android']
+		tags: ['android', 'game']
 	},
 	{
 		id: 'cfbuddy',
 		name: 'CF Buddy',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		desc: 'App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.',
 		tags: ['android', 'codeforces']
 	},
 	{
 		id: 'anyaudio',
 		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		desc: 'AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.',
+		tags: ['flask', 'backend', 'python'],
+		github: 'https://github.com/anyaudio',
+		websites: ['http://anyaudio.in']
 	},
 	{
 		id: 'anyaudio2',
