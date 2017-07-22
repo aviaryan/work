@@ -1,16 +1,10 @@
 import React, {Component} from 'react'
+import styles from './Search.css'
 
 export default class Search extends Component {
 	render() {
 		return (
-			<input type="text" placeholder="Search" style={style}/>
+			<input type="text" placeholder="Search" className={styles.search}/>
 		)
 	}
 }
-
-const style = {
-	borderTop: 0,
-	borderLeft: 0,
-	borderRight: 0
-};
-

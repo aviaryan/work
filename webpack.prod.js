@@ -1,4 +1,5 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -10,6 +11,14 @@ module.exports = {
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			loader: 'babel-loader'
+		}, {
+			test: /\.css$/,
+			use:  ExtractTextPlugin.extract({
+				use: [{
+					loader: 'css-loader',
+					options: { importLoaders: 1, modules: true, localIdentName: '[local]' },
+				}],
+			}),
 		}]
 	},
 	output: {
@@ -19,6 +28,8 @@ module.exports = {
 	},
 
 	plugins: [
+		// extract text
+		new ExtractTextPlugin("styles.css"),
 		// minify: https://webpack.js.org/guides/production-build/
 		new webpack.LoaderOptionsPlugin({
 			minimize: true,
