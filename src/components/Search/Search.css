@@ -11,4 +11,5 @@
 
 .search:focus {
 	outline: none !important;
+	border-bottom-color: lightseagreen;
 }

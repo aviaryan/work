@@ -14,8 +14,13 @@
 	font-size: 1.5rem;
 }
 
+.projectDate {
+	font-size: 0.8rem;
+	display: inline-block;
+}
+
 .projectDesc {
-	margin-top: 0.9rem;
+	margin-top: 0.5rem;
 }
 
 .projectTags {

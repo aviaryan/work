@@ -28,6 +28,11 @@ export default class Project extends Component {
 					{this.props.name}
 					<ProjectLinks {...this.props}/>
 				</div>
+				{this.props.date &&
+				<div className={styles.projectDate}>
+					{this.props.date}
+				</div>
+				}
 				<div className={styles.projectDesc}>{this.props.desc}</div>
 				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
