@@ -1,10 +1,3 @@
-html, body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
 .app {
 	margin: 0 auto 0 auto;
 	width: 95%;
@@ -36,4 +29,20 @@ html, body {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	color: slategray;
+}
+
+.footerDiv a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	color: inherit;
+}
+
+
+/** General styles **/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }

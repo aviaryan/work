@@ -5,6 +5,8 @@
 	border-left: 0;
 	width: 60%;
 	max-width: 600px;
+	align-self: center;
+	padding-bottom: 0.5rem;
 }
 
 .search:focus {
