@@ -1,72 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Showcase</title>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Import materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>The Minimal React Webpack Babel Setup</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500" rel="stylesheet">
 </head>
 <body>
-
-<div id="app" class="container">
-
-  <div class="row">
-    <div class="col s6 offset-s6">
-      <input type="text" placeholder="Search" v-model="searchInput"/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s4" v-for="p in projects">
-    <!-- project -->
-      <div class="card half-blue" :class="['project-' + p.id]">
-        <div class="card-content white-text">
-          <!-- title -->
-          <span class="card-title">{{ p.name }}</span>
-
-          <div class="card-after-title">
-            <!-- desc -->
-            <p>{{ p.desc | wrapBody }}</p>
-            <!-- tag -->
-            <div class="tag-area">
-              <div class="chip" v-for="t in p.tags">
-                {{t}} <i class="close material-icons">close</i>
-              </div>
-            </div>
-            <!-- end tag -->
-          </div>
-          <!-- end card content-->
-        </div>
-        <div class="card-action">
-          <a href="#">GITHUB</a>
-          <a href="#">WEB</a>
-        </div>
-      </div>
-    <!-- project -->
-    </div>
-  </div>
-
-</div>
-
-
-<script src="https://unpkg.com/vue"></script>
-<script src="js/data.js"></script>
-<script src="js/script.js"></script>
-
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<!-- Materialize JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-<!-- Geopattern -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-
-<script type="text/javascript">initPage()</script>
-
-</script>
+	<div id="app"></div>
+	<script src="dist/vendor.bundle.js"></script>
+	<script src="dist/bundle.js"></script>
 </body>
 </html>

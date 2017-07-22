@@ -19,3 +19,4 @@ Thanks to these guides.
 * `[React]` [List of tutorials for getting started with React](http://andrewhfarmer.com/getting-started-tutorials/)
 * `[Setup]` [Minimal React Webpack Babel setup](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
 * `[Setup]` [Official React Installation Guides](https://facebook.github.io/react/docs/installation.html)
+* `[Setup]` [Getting started with Webpack 2 - CSS](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)

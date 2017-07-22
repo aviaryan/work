@@ -9,4 +9,4 @@ insert_final_newline = true
 charset = utf-8
 
 [*.html]
-indent_style = space
+indent_style = tab
