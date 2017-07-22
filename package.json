@@ -6,7 +6,8 @@
 	"dependencies": {
 		"geopattern": "^1.2.3",
 		"react": "^15.5.4",
-		"react-dom": "^15.5.4"
+		"react-dom": "^15.5.4",
+		"react-router-dom": "^4.1.2"
 	},
 	"devDependencies": {
 		"babel-core": "^6.24.1",

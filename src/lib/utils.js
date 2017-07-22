@@ -1,3 +1,5 @@
+import projects from '../data/projects.js';
+
 export default {
 	/*
    * searchProjects filters the projects
@@ -24,5 +26,17 @@ export default {
 			}
 		}
 		return p;
+	},
+
+	/*
+	 * get project by id
+	 */
+	getProjectById: (id) => {
+		for (let p of projects) {
+			if (p['id'] === id){
+				return p;
+			}
+		}
+		return null;
 	}
 }

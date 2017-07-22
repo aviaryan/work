@@ -30,3 +30,7 @@ Thanks to these guides.
 * `[Setup]` [Getting started with Webpack 2 - CSS](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)
 * `[Setup]` [CSS Modules Webpack React](https://javascriptplayground.com/blog/2016/07/css-modules-webpack-react/)
 * [CSS with HMR](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/30)
+
+##### Router
+
+* [Router web docs](https://reacttraining.com/react-router/web/guides/quick-start)
