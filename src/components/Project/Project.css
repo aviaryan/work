@@ -6,8 +6,8 @@
 	/** this is tricky, can't rely on justify-content **/
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
-	z-index: 2;
 	font-weight: normal;
+	height: 150px;
 }
 
 .projectTitle {

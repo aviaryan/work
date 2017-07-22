@@ -41,5 +41,35 @@ export default [
 		name: 'AnyAudio',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
 		tags: ['flask', 'backend']
+	},
+	{
+		id: 'anyaudio2',
+		name: 'AnyAudio',
+		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		tags: ['flask', 'backend']
+	},
+	{
+		id: 'anyaudio3',
+		name: 'AnyAudio',
+		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		tags: ['flask', 'backend']
+	},
+	{
+		id: 'anyaudio4',
+		name: 'AnyAudio',
+		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		tags: ['flask', 'backend']
+	},
+	{
+		id: 'anyaudio5',
+		name: 'AnyAudio',
+		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		tags: ['flask', 'backend']
+	},
+	{
+		id: 'anyaudio6',
+		name: 'AnyAudio',
+		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		tags: ['flask', 'backend']
 	}
 ]
