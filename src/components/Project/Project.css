@@ -22,6 +22,7 @@
 
 .projectDesc {
 	margin-top: 0.5rem;
+	flex-grow: 100;
 }
 
 .projectTags {
@@ -30,8 +31,4 @@
 
 .projectLinks {
 	margin-left: 1rem;
-}
-
-.emptySpace {
-	flex-grow: 100;
 }

@@ -6,7 +6,7 @@ export default [
 		date: '2013-16',
 		github: 'https://github.com/aviaryan/Clipjump',
 		websites: ['https://bit.ly/clipjump'],
-		tags: ['autohotkey', 'software']
+		tags: ['autohotkey', 'clipboard']
 	},
 	{
 		id: 'shach',
@@ -56,7 +56,7 @@ export default [
 	{
 		id: 'typ3r',
 		name: 'tYp3r',
-		desc: '😎 dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)',
+		desc: 'dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)',
 		tags: ['webapp'],
 		github: 'https://github.com/aviaryan/tYp3r',
 		websites: ['http://typ3r.aavi.me']
@@ -76,9 +76,10 @@ export default [
 		github: 'https://github.com/aviaryan/BigEval.js'
 	},
 	{
-		id: 'anyaudio6',
-		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		id: 'algos',
+		name: 'Algos',
+		desc: 'Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.',
+		tags: ['algorithm', 'data-structures'],
+		github: 'https://github.com/iiitv/algos'
 	}
 ]
