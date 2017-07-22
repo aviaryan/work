@@ -26,7 +26,7 @@ export default class App extends Component {
 
 	render() {
 		let projectDOM = this.state.projects.map((p) =>
-			<Project {...p}/>
+			<Project key={p.id} {...p}/>
 		);
 		return (
 			<div className={styles.app}>

@@ -1,7 +1,7 @@
 .project {
-	width: 30%;
+	width: 29%;
 	margin-top: 1rem;
-	padding: 0.5rem;
+	padding: 1rem 1rem 1rem 1rem;
 	border: 1px solid #7d97ad;
 	/** this is tricky, can't rely on justify-content **/
 	margin-right: 0.5rem;
@@ -11,4 +11,9 @@
 
 .projectTitle {
 	font-size: 1.5rem;
+}
+
+.projectTags {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }

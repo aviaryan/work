@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+import Tag from '../Tag/Tag.jsx'
 import styles from './Project.css'
 
 export default class Project extends Component {
@@ -8,10 +9,14 @@ export default class Project extends Component {
 	}
 
 	render() {
+		let tagsDOM = this.props.tags.map((t) =>
+			<Tag key={t} name={t}/>
+		);
 		return (
-			<div key={this.props.key} className={styles.project}>
+			<div className={[styles.project, this.props.id].join(' ')}>
 				<div className={styles.projectTitle}>{this.props.name}</div>
 				<div>{this.props.desc}</div>
+				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)
 	}

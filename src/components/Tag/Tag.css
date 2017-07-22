@@ -1,0 +1,7 @@
+.tag {
+	border-radius: 1rem;
+	border: 1px solid greenyellow;
+	padding: 0.5rem;
+	margin: 1rem 0.3rem 0.5rem 0;
+	font-size: 0.8rem;
+}
