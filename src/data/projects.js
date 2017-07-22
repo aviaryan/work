@@ -27,14 +27,15 @@ export default [
 		id: 'hinix',
 		name: 'Hinix',
 		desc: 'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
-		github: 'https://github.com/aviaryan/Clipjump',
+		github: 'https://github.com/aviaryan/Hinix',
 		tags: ['android', 'game']
 	},
 	{
 		id: 'cfbuddy',
 		name: 'CF Buddy',
 		desc: 'App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.',
-		tags: ['android', 'codeforces']
+		tags: ['android', 'codeforces'],
+		github: 'https://github.com/aviaryan/CFBuddy'
 	},
 	{
 		id: 'anyaudio',
@@ -45,28 +46,34 @@ export default [
 		websites: ['http://anyaudio.in']
 	},
 	{
-		id: 'anyaudio2',
-		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		id: 'pop-patna',
+		name: 'Popular Places in Patna',
+		desc: 'A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.',
+		tags: ['webpack', 'webapp'],
+		github: 'https://github.com/aviaryan/pop-places-patna',
+		websites: ['http://aviaryan.in/pop-places-patna/']
 	},
 	{
-		id: 'anyaudio3',
-		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		id: 'typ3r',
+		name: 'tYp3r',
+		desc: '😎 dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)',
+		tags: ['webapp'],
+		github: 'https://github.com/aviaryan/tYp3r',
+		websites: ['http://typ3r.aavi.me']
 	},
 	{
-		id: 'anyaudio4',
-		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		id: 'typ3rjs',
+		name: 'typ3r.js',
+		desc: 'JavaScript library to convert sane human readable text to a not s0 hUMaN Re@dAbLE t3xT. No external dependencies.',
+		tags: ['js', 'npm'],
+		github: 'https://github.com/aviaryan/typ3r.js'
 	},
 	{
-		id: 'anyaudio5',
-		name: 'AnyAudio',
-		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
-		tags: ['flask', 'backend']
+		id: 'bigeval',
+		name: 'BigEval.js',
+		desc: 'JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.',
+		tags: ['js', 'npm'],
+		github: 'https://github.com/aviaryan/BigEval.js'
 	},
 	{
 		id: 'anyaudio6',
