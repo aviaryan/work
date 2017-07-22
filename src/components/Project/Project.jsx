@@ -15,7 +15,7 @@ export default class Project extends Component {
 		return (
 			<div className={[styles.project, this.props.id].join(' ')}>
 				<div className={styles.projectTitle}>{this.props.name}</div>
-				<div>{this.props.desc}</div>
+				<div className={styles.projectDesc}>{this.props.desc}</div>
 				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)
