@@ -6,3 +6,12 @@
 	font-size: 1rem;
 	color: dimgray;
 }
+
+@media all and (max-width: 550px) {
+	.header { /* single row */
+		font-size: 1.3rem;
+	}
+	.tagline {
+		font-size: 0.8rem;
+	}
+}

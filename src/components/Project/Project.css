@@ -7,18 +7,27 @@
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
 	height: 170px;
+	/* making height auto may help with mobile issues */
 	display: flex;
 	flex-direction: column;
 }
 
-.projectTitle {
+.projectTitleSmall, .projectTitle {
 	height: 2rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.projectTitle {
 	font-size: 1.5rem;
 }
 
 .projectTitleSmall {
-	height: 2rem;
 	font-size: 1.3rem;
+}
+
+.projectName {
+	margin-right: 1rem;
 }
 
 .projectDate {
@@ -42,3 +51,71 @@
 .projectLinks {
 	margin-left: 1rem;
 }
+
+/** Media queries **/
+
+@media all and (max-width: 1200px) {
+	.project {
+		width: 31%;
+		margin: 1rem 0 0 2px;
+		padding: 1rem 0.7rem 1rem 0.7rem;
+	}
+}
+
+@media all and (max-width: 1155px) {
+	.project {
+		width: 30%;
+	}
+	.projectTitle {
+		font-size: 1.3rem;
+	}
+	.projectTitleSmall {
+		font-size: 1.1rem;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.project {
+		width: 45%;
+		margin: 1rem 2px 0 4px;
+		padding: 1rem 1rem 1rem 1rem;
+	}
+}
+
+@media all and (max-width: 820px) {
+	.project {
+		width: 43%;
+		height: 180px;
+	}
+	.projectTitle, .projectTitleSmall {
+		height: auto;
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.project {
+		width: 42%;
+		height: 200px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.project { /* single col*/
+		width: 90%;
+		max-width: 400px;
+		height: auto;
+	}
+}
+
+/*@media all and (max-width: 400px) {*/
+	/*.project {*/
+		/*height: 170px;*/
+	/*}*/
+/*}*/
+
+/*@media all and (max-width: 350px) {*/
+	/*.project {*/
+		/*height: 190px;*/
+	/*}*/
+/*}*/
