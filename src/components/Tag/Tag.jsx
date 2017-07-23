@@ -19,7 +19,7 @@ export default class Tag extends Component {
 
 	render() {
 		return (
-			<span className={styles.tag} onClick={this.tagClick}>
+			<span className={styles.tag} onClick={this.props.clickListener || this.tagClick}>
 				{this.props.name}
 			</span>
 		)

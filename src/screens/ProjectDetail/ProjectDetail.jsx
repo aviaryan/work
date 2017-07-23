@@ -6,9 +6,19 @@ import styles from './ProjectDetail.css'
 import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'
 import GitHubStar from '../../components/GitHubStar/GitHubStar'
+import state from '../../lib/state'
 
 
 export default class ProjectDetail extends Component {
+
+	tagClick(event) {
+		let tag = event.target.textContent;
+		state.dispatch({type: 'PUT', data: {
+			search: tag
+		}});
+		window.location.href = '#';
+	}
+
 	render() {
 		let project = lib.getProjectById(this.props.match.params.id);
 		// 404
@@ -19,7 +29,7 @@ export default class ProjectDetail extends Component {
 		}
 		// tags and websites
 		let tagsDOM = project.tags.map((t) =>
-			<Tag key={t} name={t}/>
+			<Tag key={t} name={t} clickListener={this.tagClick}/>
 		);
 		let websitesDOM = [];
 		if (project.websites) {
