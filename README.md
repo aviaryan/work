@@ -39,3 +39,7 @@ Thanks to these guides.
 
 * [Resolve jsx extension in Webpack](https://stackoverflow.com/questions/34678314/)
 * [Using preact](https://preactjs.com/guide/switching-to-preact)
+
+##### Better state management
+
+* [Redux Official Intro](http://redux.js.org/)
