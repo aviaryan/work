@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
-import App from './screens/App/App.jsx';
-import ProjectDetail from './screens/ProjectDetail/ProjectDetail.jsx';
-import styles from './index.css';
+import App from './screens/App/App'
+import ProjectDetail from './screens/ProjectDetail/ProjectDetail'
+import styles from './index.css'
 
 ReactDOM.render(
 	<Router>

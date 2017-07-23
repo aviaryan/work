@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import GeoPattern from 'geopattern'
 
-import Tag from '../Tag/Tag.jsx'
+import Tag from '../Tag/Tag'
 import styles from './Project.css'
-import ProjectLinks from '../ProjectLinks/ProjectLinks.jsx'
+import ProjectLinks from '../ProjectLinks/ProjectLinks'
 
 export default class Project extends Component {
 	constructor(props) {

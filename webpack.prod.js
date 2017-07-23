@@ -16,10 +16,13 @@ module.exports = {
 			use:  ExtractTextPlugin.extract({
 				use: [{
 					loader: 'css-loader',
-					options: { importLoaders: 1, modules: true, localIdentName: '[local]' },
+					options: { importLoaders: 1, modules: true, localIdentName: '[local]-[hash:base64:5]' },
 				}],
 			}),
 		}]
+	},
+	resolve: {
+		extensions: ['.js', '.jsx']
 	},
 	output: {
 		path: __dirname + '/dist',

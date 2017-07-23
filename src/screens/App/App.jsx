@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 
-import Search from '../../components/Search/Search.jsx'
-import Header from '../../components/Header/Header.jsx'
-import Project from '../../components/Project/Project.jsx'
+import Search from '../../components/Search/Search'
+import Header from '../../components/Header/Header'
+import Project from '../../components/Project/Project'
 import styles from './App.css'
 
-import lib from '../../lib/utils.js'
-import projects from '../../data/projects.js'
+import lib from '../../lib/utils'
+import projects from '../../data/projects'
 
 
 export default class App extends Component {

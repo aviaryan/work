@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 
-import lib from '../../lib/utils.js'
+import lib from '../../lib/utils'
 import appStyles from '../App/App.css'
 import styles from './ProjectDetail.css'
-import Page404 from '../Page404/Page404.jsx'
-import ProjectLinks from '../../components/ProjectLinks/ProjectLinks.jsx';
+import Page404 from '../Page404/Page404'
+import ProjectLinks from '../../components/ProjectLinks/ProjectLinks'
 
 
 export default class ProjectDetail extends Component {

@@ -34,3 +34,7 @@ Thanks to these guides.
 ##### Router
 
 * [Router web docs](https://reacttraining.com/react-router/web/guides/quick-start)
+
+##### Cleaning up
+
+* [Resolve jsx extension in Webpack](https://stackoverflow.com/questions/34678314/)
