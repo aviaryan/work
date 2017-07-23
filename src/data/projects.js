@@ -3,6 +3,7 @@ export default [
 		id: 'clipjump',
 		name: 'Clipjump',
 		desc: 'Clipjump is a full fledged clipboard manager for Windows. It relies on the power of keyboard shortcuts and combinations.',
+		more: 'It supports extension via plugins, has configurable hotkeys and enables users to write scripts via a feature known as Clipjump Custom.',
 		date: '2013-16',
 		github: 'https://github.com/aviaryan/Clipjump',
 		websites: ['https://bit.ly/clipjump'],

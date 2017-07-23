@@ -1,0 +1,17 @@
+.page {
+	max-width: 1000px;
+}
+
+.name {
+	margin-top: 1rem;
+	font-size: 3rem;
+}
+
+.links {
+	font-size: 1.3rem;
+}
+
+.desc {
+	margin-top: 2rem;
+	font-size: 1.2rem;
+}
