@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import lib from '../../lib/utils'
-import appStyles from '../App/App.css'
+import appStyles from '../Home/Home.css'
 import styles from './ProjectDetail.css'
 import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'

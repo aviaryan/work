@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 import Search from '../../components/Search/Search'
 import Header from '../../components/Header/Header'
 import Project from '../../components/Project/Project'
-import styles from './App.css'
+import styles from './Home.css'
 
 import lib from '../../lib/utils'
 import projects from '../../data/projects'

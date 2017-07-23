@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
-import App from './screens/App/App'
+import Home from './screens/Home/Home'
 import ProjectDetail from './screens/ProjectDetail/ProjectDetail'
 import styles from './index.css'
 
 ReactDOM.render(
 	<Router>
 		<div className={styles.router}>
-			<Route exact path="/" component={App}/>
+			<Route exact path="/" component={Home}/>
 			<Route path="/:id" component={ProjectDetail}/>
 		</div>
 	</Router>,
