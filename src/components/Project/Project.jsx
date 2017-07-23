@@ -8,6 +8,7 @@ import ProjectLinks from '../ProjectLinks/ProjectLinks'
 export default class Project extends Component {
 	constructor(props) {
 		super(props);
+		this.desClick = this.desClick.bind(this);
 	}
 
 	componentDidMount() {
@@ -15,6 +16,10 @@ export default class Project extends Component {
 			baseColor: '#d2f9a8' // #f0fab8
 		});
 		document.getElementsByClassName(this.props.id)[0].style.backgroundImage = pattern.toDataUrl();
+	}
+
+	desClick(event) {
+		window.location.href = '#/' + this.props.id;
 	}
 
 	render() {
@@ -33,7 +38,7 @@ export default class Project extends Component {
 					{this.props.date}
 				</div>
 				}
-				<div className={styles.projectDesc}>{this.props.desc}</div>
+				<div className={styles.projectDesc} onClick={this.desClick}>{this.props.desc}</div>
 				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)

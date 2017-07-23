@@ -44,6 +44,7 @@ export default [
 		desc: 'AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.',
 		tags: ['flask', 'backend', 'python'],
 		github: 'https://github.com/anyaudio',
+		githubRepo: 'https://github.com/anyaudio/anyaudio-server',
 		websites: ['http://anyaudio.in']
 	},
 	{

@@ -25,6 +25,10 @@
 	flex-grow: 100;
 }
 
+.projectDesc:hover {
+	cursor: pointer;
+}
+
 .projectTags {
 	margin-top: 1rem;
 }

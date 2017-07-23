@@ -5,6 +5,7 @@ import appStyles from '../App/App.css'
 import styles from './ProjectDetail.css'
 import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'
+import GitHubStar from '../../components/GitHubStar/GitHubStar'
 
 
 export default class ProjectDetail extends Component {
@@ -35,6 +36,12 @@ export default class ProjectDetail extends Component {
 				</div>
 
 				<div className={styles.hr} />
+
+				{project.github &&
+				<div className={styles.ghButton}>
+					<GitHubStar github={project.githubRepo || project.github}/>
+				</div>
+				}
 
 				<div className={styles.links}>
 					{project.github &&

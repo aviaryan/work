@@ -20,8 +20,12 @@
 	background-color: lightgrey;
 }
 
-.links {
+.ghButton {
 	margin-top: 1rem;
+}
+
+.links {
+	margin-top: 1.5rem;
 	font-size: 1.3rem;
 }
 
