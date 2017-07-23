@@ -38,5 +38,16 @@ export default {
 			}
 		}
 		return null;
+	},
+
+	/*
+	 * setSearch and fire
+	 */
+	setSearch: (text) => {
+		let search = document.getElementById('search');
+		search.value = text;
+		// fire event https://stackoverflow.com/questions/23892547/
+		let event = new Event('input', { bubbles: true });
+		search.dispatchEvent(event);
 	}
 }

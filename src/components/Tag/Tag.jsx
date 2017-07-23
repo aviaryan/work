@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import styles from './Tag.css'
+import lib from '../../lib/utils'
 
 export default class Tag extends Component {
 	tagClick(event) {
@@ -13,10 +14,7 @@ export default class Tag extends Component {
 		} else {
 			vals.push(data);
 		}
-		search.value = vals.join(' ');
-		// fire event https://stackoverflow.com/questions/23892547/
-		let event2 = new Event('input', { bubbles: true });
-		search.dispatchEvent(event2);
+		lib.setSearch(vals.join(' '));
 	}
 
 	render() {

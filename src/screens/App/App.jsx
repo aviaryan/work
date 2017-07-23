@@ -18,6 +18,13 @@ export default class App extends Component {
 		this.inputChange = this.inputChange.bind(this);
 	}
 
+	componentDidMount() {
+		let searchText = this.props.location.search.substring(1);
+		if (searchText) { // optimize, only needed when search has something
+			lib.setSearch(searchText);
+		}
+	}
+
 	inputChange(event) {
 		this.setState({
 			projects: lib.filterProjects(projects, event.target.value)
