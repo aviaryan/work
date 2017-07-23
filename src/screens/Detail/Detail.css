@@ -65,10 +65,13 @@
 	.name {
 		font-size: 1.3rem;
 	}
+	.backLink {
+		font-size: 2rem;
+	}
 	.desc, .links {
 		font-size: 100%;
 	}
 	.links a {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 }
