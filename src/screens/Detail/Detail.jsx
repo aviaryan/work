@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import lib from '../../lib/utils'
 import appStyles from '../Home/Home.css'
-import styles from './ProjectDetail.css'
+import styles from './Detail.css'
 import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'
 import GitHubStar from '../../components/GitHubStar/GitHubStar'

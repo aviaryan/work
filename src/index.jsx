@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Home from './screens/Home/Home'
-import ProjectDetail from './screens/ProjectDetail/ProjectDetail'
+import Detail from './screens/Detail/Detail'
 import styles from './index.css'
 
 ReactDOM.render(
 	<Router>
 		<div className={styles.router}>
 			<Route exact path="/" component={Home}/>
-			<Route path="/:id" component={ProjectDetail}/>
+			<Route path="/:id" component={Detail}/>
 		</div>
 	</Router>,
 	document.getElementById('app')
