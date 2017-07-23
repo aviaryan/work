@@ -165,7 +165,7 @@ export default [
 		name: 'Anime Catalog',
 		date: '2017',
 		desc: 'Full stack app that allows users to login and list down favorite anime series.',
-		tags: ['webapp', 'backend', 'oauth'],
+		tags: ['webapp', 'backend', 'oauth', 'flask'],
 		github: 'https://github.com/aviaryan/ud-catalog'
 	},
 	{
