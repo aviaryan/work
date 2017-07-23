@@ -5,6 +5,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"geopattern": "^1.2.3",
+		"preact": "^8.2.1",
+		"preact-compat": "^3.16.0",
 		"react": "^15.5.4",
 		"react-dom": "^15.5.4",
 		"react-router-dom": "^4.1.2"
@@ -23,6 +25,7 @@
 	},
 	"scripts": {
 		"start": "webpack-dev-server --progress --colors --hot --config ./webpack.dev.js",
-		"build": "webpack -p --config ./webpack.prod.js"
+		"build": "webpack -p --config ./webpack.prod.js",
+		"webpack-size": "webpack --config ./webpack.prod.js --json | webpack-bundle-size-analyzer"
 	}
 }

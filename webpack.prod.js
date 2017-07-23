@@ -10,7 +10,10 @@ module.exports = {
 		loaders: [{
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
-			loader: 'babel-loader'
+			loader: 'babel-loader',
+			query: {
+				presets: ['es2015', 'react']
+			}
 		}, {
 			test: /\.css$/,
 			use:  ExtractTextPlugin.extract({
@@ -22,30 +25,37 @@ module.exports = {
 		}]
 	},
 	resolve: {
-		extensions: ['.js', '.jsx']
+		extensions: ['.js', '.jsx'],
+		"alias": {
+			"react": "preact-compat",
+			"react-dom": "preact-compat"
+		}
 	},
 	output: {
 		path: __dirname + '/dist',
 		publicPath: '/dist/',
 		filename: 'bundle.js'
 	},
-
 	plugins: [
 		// extract text
 		new ExtractTextPlugin("styles.css"),
-		// minify: https://webpack.js.org/guides/production-build/
-		new webpack.LoaderOptionsPlugin({
-			minimize: true,
-			debug: false
-		}),
+		// minify
 		new webpack.optimize.UglifyJsPlugin({
-			beautify: false,
-			mangle: {
-				screw_ie8: true,
-				keep_fnames: true
-			},
+			mangle: true,
 			compress: {
-				screw_ie8: true
+				warnings: false, // Suppress uglification warnings
+				pure_getters: true,
+				unsafe: true,
+				unsafe_comps: true,
+				screw_ie8: true,
+				conditionals: true,
+				unused: true,
+				comparisons: true,
+				sequences: true,
+				dead_code: true,
+				evaluate: true,
+				if_return: true,
+				join_vars: true
 			},
 			comments: false
 		}),

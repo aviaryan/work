@@ -38,3 +38,4 @@ Thanks to these guides.
 ##### Cleaning up
 
 * [Resolve jsx extension in Webpack](https://stackoverflow.com/questions/34678314/)
+* [Using preact](https://preactjs.com/guide/switching-to-preact)
