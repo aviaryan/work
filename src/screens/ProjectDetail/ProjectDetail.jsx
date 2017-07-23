@@ -31,7 +31,7 @@ export default class ProjectDetail extends Component {
 		return (
 			<div className={[appStyles.app, styles.page].join(' ')}>
 				<div className={styles.name}>
-					<a href="#" className={styles.backLink}>←</a>
+					<a href={"#" + this.props.location.search} className={styles.backLink}>←</a>
 					{project.name}
 				</div>
 

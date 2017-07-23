@@ -19,7 +19,8 @@ export default class Project extends Component {
 	}
 
 	desClick(event) {
-		window.location.href = '#/' + this.props.id;
+		let query = document.getElementById('search').value;
+		window.location.href = '#/' + this.props.id + '?' + query;
 	}
 
 	render() {
