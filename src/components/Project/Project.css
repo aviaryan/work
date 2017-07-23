@@ -38,6 +38,9 @@
 .projectDesc {
 	margin-top: 0.5rem;
 	flex-grow: 100;
+	/*padding: 0.3rem;*/
+	/*border-radius: 1rem;*/
+	/*border: 1px dotted;*/
 }
 
 .projectDesc:hover {
@@ -104,18 +107,18 @@
 	.project { /* single col*/
 		width: 90%;
 		max-width: 400px;
-		height: auto;
+		height: 150px;
 	}
 }
 
-/*@media all and (max-width: 400px) {*/
-	/*.project {*/
-		/*height: 170px;*/
-	/*}*/
-/*}*/
+@media all and (max-width: 400px) {
+	.project {
+		height: 170px;
+	}
+}
 
-/*@media all and (max-width: 350px) {*/
-	/*.project {*/
-		/*height: 190px;*/
-	/*}*/
-/*}*/
+@media all and (max-width: 350px) {
+	.project {
+		height: 190px;
+	}
+}

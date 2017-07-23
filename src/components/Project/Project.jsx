@@ -5,6 +5,7 @@ import Tag from '../Tag/Tag'
 import styles from './Project.css'
 import ProjectLinks from '../ProjectLinks/ProjectLinks'
 import store from '../../lib/state'
+// import ldColor from '../../lib/ligthenDarkenColor'
 
 export default class Project extends Component {
 	constructor(props) {
@@ -16,7 +17,10 @@ export default class Project extends Component {
 		let pattern = GeoPattern.generate(this.props.name, {
 			baseColor: '#d2f9a8' // #f0fab8
 		});
-		document.getElementsByClassName(this.props.id)[0].style.backgroundImage = pattern.toDataUrl();
+		document.getElementsByClassName(this.props.id)[0].style.backgroundColor = pattern.color;
+		// let desc = document.getElementsByClassName(this.props.id + 'desc')[0];
+		// desc.style.backgroundColor = ldColor(pattern.color, 10);
+		// desc.style.borderColor = ldColor(pattern.color, -40);
 	}
 
 	desClick(event) {
