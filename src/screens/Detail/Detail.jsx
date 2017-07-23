@@ -34,7 +34,7 @@ export default class ProjectDetail extends Component {
 		let websitesDOM = [];
 		if (project.websites) {
 			websitesDOM = project.websites.map((w) =>
-				<div key={w}>Website: <a href={w}>{w}</a></div>
+				<div key={w}>Website: <a href={w} target="_blank">{w}</a></div>
 			);
 		}
 		// render
@@ -55,7 +55,7 @@ export default class ProjectDetail extends Component {
 
 				<div className={styles.links}>
 					{project.github &&
-					<div>GitHub: <a href={project.github}>{project.github}</a></div>}
+					<div>GitHub: <a href={project.github} target="_blank">{project.github}</a></div>}
 					{websitesDOM}
 				</div>
 

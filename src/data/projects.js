@@ -14,6 +14,7 @@ export default [
 		name: 'Shach',
 		desc: 'Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.',
 		github: 'https://github.com/aviaryan/shach',
+		date: '2017',
 		tags: ['compiler', 'cpp']
 	},
 	{
@@ -21,6 +22,7 @@ export default [
 		name: 'Sublime 4 AutoHotkey',
 		desc: 'A Sublime Text addon to do AutoHotkey coding in the editor. Provides much more than a Sublime Text package.',
 		github: 'https://github.com/aviaryan/Clipjump',
+		date: '2013-14',
 		websites: ['http://git.io'],
 		tags: ['autohotkey', 'sublime-text']
 	},
@@ -28,12 +30,14 @@ export default [
 		id: 'hinix',
 		name: 'Hinix',
 		desc: 'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
+		date: '2016',
 		github: 'https://github.com/aviaryan/Hinix',
 		tags: ['android', 'game']
 	},
 	{
 		id: 'cfbuddy',
 		name: 'CF Buddy',
+		date: '2017',
 		desc: 'App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.',
 		tags: ['android', 'codeforces'],
 		github: 'https://github.com/aviaryan/CFBuddy'
@@ -42,6 +46,7 @@ export default [
 		id: 'anyaudio',
 		name: 'AnyAudio',
 		desc: 'AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.',
+		date: '2016-17',
 		tags: ['flask', 'backend', 'python'],
 		github: 'https://github.com/anyaudio',
 		githubRepo: 'https://github.com/anyaudio/anyaudio-server',
@@ -51,6 +56,7 @@ export default [
 		id: 'pop-patna',
 		name: 'Popular Places in Patna',
 		desc: 'A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.',
+		date: '2017',
 		tags: ['webpack', 'webapp'],
 		github: 'https://github.com/aviaryan/pop-places-patna',
 		websites: ['http://aviaryan.in/pop-places-patna/']
@@ -59,6 +65,7 @@ export default [
 		id: 'typ3r',
 		name: 'tYp3r',
 		desc: 'dA aNn0Y1Ng t3Xt g3NeRa7or (The annoying text generator :-P)',
+		date: '2017',
 		tags: ['webapp'],
 		github: 'https://github.com/aviaryan/tYp3r',
 		websites: ['http://typ3r.aavi.me']
@@ -66,6 +73,7 @@ export default [
 	{
 		id: 'typ3rjs',
 		name: 'typ3r.js',
+		date: '2017',
 		desc: 'JavaScript library to convert sane human readable text to a not s0 hUMaN Re@dAbLE t3xT. No external dependencies.',
 		tags: ['js', 'npm'],
 		github: 'https://github.com/aviaryan/typ3r.js'
@@ -73,6 +81,7 @@ export default [
 	{
 		id: 'bigeval',
 		name: 'BigEval.js',
+		date: '2015-16',
 		desc: 'JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.',
 		tags: ['js', 'npm'],
 		github: 'https://github.com/aviaryan/BigEval.js'
@@ -80,8 +89,34 @@ export default [
 	{
 		id: 'algos',
 		name: 'Algos',
+		date: '2017',
 		desc: 'Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.',
 		tags: ['algorithm', 'data-structures'],
 		github: 'https://github.com/iiitv/algos'
+	},
+	{
+		id: 'resume',
+		name: 'Resume',
+		date: '2016',
+		desc: 'Pseudo dynamic resume template created in Jekyll. Change YAML files to update resume.',
+		tags: ['jekyll', 'website'],
+		github: 'https://github.com/aviaryan/resume',
+		websites: ['http://aviaryan.in/resume/']
+	},
+	{
+		id: 'ahkst',
+		name: 'AHK package Sublime',
+		date: '2014',
+		desc: 'AutoHotkey package for Sublime Text. Now discontinued in favor of the community package.',
+		tags: ['autohotkey', 'sublime-text'],
+		github: 'https://github.com/aviaryan/AutoHotkey'
+	},
+	{
+		id: 'stealFunc',
+		name: 'Steal Func',
+		date: '2014',
+		desc: 'Library to extract the minimum code needed from an external library OR say it strips out unused code.',
+		tags: ['autohotkey', 'regex'],
+		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
 	}
 ]
