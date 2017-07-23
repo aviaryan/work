@@ -35,7 +35,7 @@ export default class Project extends Component {
 		);
 		return (
 			<div className={[styles.project, this.props.id].join(' ')}>
-				<div className={styles.projectTitle}>
+				<div className={this.props.name.length > 20 ? styles.projectTitleSmall : styles.projectTitle}>
 					{this.props.name}
 					<ProjectLinks {...this.props}/>
 				</div>

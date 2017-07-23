@@ -46,7 +46,7 @@ export default [
 		id: 'anyaudio',
 		name: 'AnyAudio',
 		desc: 'AnyAudio is an audio-streaming service that uses YouTube as the source. Written in Flask.',
-		date: '2016-17',
+		date: '2016-present',
 		tags: ['flask', 'backend', 'python'],
 		github: 'https://github.com/anyaudio',
 		githubRepo: 'https://github.com/anyaudio/anyaudio-server',
@@ -89,7 +89,7 @@ export default [
 	{
 		id: 'algos',
 		name: 'Algos',
-		date: '2017',
+		date: '2017-present',
 		desc: 'Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.',
 		tags: ['algorithm', 'data-structures'],
 		github: 'https://github.com/iiitv/algos'
@@ -116,7 +116,40 @@ export default [
 		name: 'Steal Func',
 		date: '2014',
 		desc: 'Library to extract the minimum code needed from an external library OR say it strips out unused code.',
-		tags: ['autohotkey', 'regex'],
+		tags: ['autohotkey', 'regex', 'scripting'],
 		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
-	}
+	},
+	{
+		id: 'nologin',
+		name: 'Awesome No Login Web Apps',
+		date: '2016-17',
+		desc: 'Curated list of awesome web apps that work without requesting you to create an account.',
+		tags: ['awesome-list'],
+		github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
+	},
+	{
+		id: 'kissdown',
+		name: 'KissAnime Batch Downloader',
+		date: '2017',
+		desc: 'Scripts that fetch download links of any series on KissAnime, KissAsian or KissCartoon and gives them to you in the form of a list.',
+		tags: ['js', 'hacking'],
+		github: 'https://github.com/aviaryan/Kissanime-Batch-Downloader'
+	},
+	{
+		id: 'udportfolio',
+		name: 'Simple Portfolio',
+		date: '2017',
+		desc: 'A simple, lightweight, responsive portfolio design.',
+		tags: ['website'],
+		github: 'https://github.com/aviaryan/ud-portfolio',
+		websites: ['http://aviaryan.in/ud-portfolio/']
+	},
+	{
+		id: 'last2imgur',
+		name: 'Last 2 Imgur',
+		date: '2017',
+		desc: 'Alfred workflow to upload the last screenshot taken to Imgur + (delete and minify image)',
+		tags: ['alfred', 'scripting'],
+		github: 'https://github.com/aviaryan/alfred-last2imgur'
+	},
 ]
