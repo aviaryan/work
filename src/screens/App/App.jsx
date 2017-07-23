@@ -36,6 +36,8 @@ export default class App extends Component {
 		if (st.yOffset !== undefined){
 			window.scrollTo(0, st.yOffset);
 		}
+		// clear state
+		store.dispatch({type: 'CLEAR'});
 	}
 
 	inputChange(event) {

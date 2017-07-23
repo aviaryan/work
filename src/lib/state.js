@@ -4,6 +4,8 @@ let manager = (state = {}, action) => {
 	switch (action.type) {
 		case 'PUT':
 			return action.data;
+		case 'CLEAR':
+			return {};
 		default:
 			return state;
 	}
