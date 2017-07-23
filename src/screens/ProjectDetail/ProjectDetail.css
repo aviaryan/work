@@ -2,16 +2,46 @@
 	max-width: 1000px;
 }
 
+.backLink {
+	text-decoration: none;
+	color: inherit;
+	margin-right: 1rem;
+}
+
 .name {
 	margin-top: 1rem;
 	font-size: 3rem;
 }
 
+.hr {
+	margin: 1rem auto 1rem auto;
+	width: 95%;
+	height: 1px;
+	background-color: lightgrey;
+}
+
 .links {
+	margin-top: 1rem;
 	font-size: 1.3rem;
 }
 
+.links a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	font-size: 1rem;
+	border-bottom: 1px dotted;
+}
+
+.links div {
+	margin-bottom: 0.5rem;
+}
+
 .desc {
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 	font-size: 1.2rem;
+}
+
+.tags {
+	margin-top: 1.5rem;
 }
