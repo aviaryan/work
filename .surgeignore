@@ -1,0 +1,6 @@
+src/
+yarn.lock
+webpack*.js
+LICENSE
+*.json
+README.md
