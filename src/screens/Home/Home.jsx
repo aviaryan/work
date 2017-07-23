@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import GeoPattern from 'geopattern'
 
 import Search from '../../components/Search/Search'
 import Header from '../../components/Header/Header'
@@ -20,6 +21,9 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
+		// set header color
+		this.setHeaderColor();
+
 		// use query param
 		// generally passed manually so return
 		let searchText = this.props.location.search.substring(1);
@@ -38,6 +42,17 @@ export default class App extends Component {
 		}
 		// clear state
 		store.dispatch({type: 'CLEAR'});
+	}
+
+	/*
+	 * sets a random color to header text
+	 */
+	setHeaderColor(){
+		let str = Date.now().toString();
+		let pattern = GeoPattern.generate(str, {
+			baseColor: '#8e354b'
+		});
+		document.getElementsByClassName(styles.headerDiv)[0].style.color = pattern.color;
 	}
 
 	inputChange(event) {
