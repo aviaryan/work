@@ -21,6 +21,7 @@ export default class App extends Component {
 
 	componentDidMount() {
 		// use query param
+		// generally passed manually so return
 		let searchText = this.props.location.search.substring(1);
 		if (searchText) { // optimize, only needed when search has something
 			lib.setSearch(searchText);
@@ -30,6 +31,10 @@ export default class App extends Component {
 		let st = store.getState();
 		if (st.search !== undefined && st.search){
 			lib.setSearch(st.search);
+		}
+		// scroll state
+		if (st.yOffset !== undefined){
+			window.scrollTo(0, st.yOffset);
 		}
 	}
 
