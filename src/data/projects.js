@@ -152,4 +152,29 @@ export default [
 		tags: ['alfred', 'scripting'],
 		github: 'https://github.com/aviaryan/alfred-last2imgur'
 	},
+	{
+		id: 'abc',
+		name: 'ABC',
+		date: '2017-present',
+		desc: 'Commanline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.',
+		tags: ['golang', 'cli'],
+		github: 'https://github.com/appbaseio/abc'
+	},
+	{
+		id: 'catalog',
+		name: 'Anime Catalog',
+		date: '2017',
+		desc: 'Full stack app that allows users to login and list down favorite anime series.',
+		tags: ['webapp', 'backend', 'oauth'],
+		github: 'https://github.com/aviaryan/ud-catalog'
+	},
+	{
+		id: 'website',
+		name: 'My Blog/Website',
+		date: '2013-16',
+		desc: 'Blog + website written in Jekyll.',
+		tags: ['website', 'blog', 'jekyll'],
+		github: 'https://github.com/aviaryan/aviaryan.github.com',
+		websites: ['http://aviaryan.github.io']
+	},
 ]
