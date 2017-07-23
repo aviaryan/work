@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
 	entry: {
 		app: './src/index.jsx',
-		vendor: ['react', 'react-dom', 'geopattern', 'react-router-dom']
+		vendor: ['react', 'react-dom', 'geopattern', 'react-router-dom', 'redux']
 	},
 	module: {
 		loaders: [{

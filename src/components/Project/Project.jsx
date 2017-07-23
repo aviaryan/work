@@ -4,6 +4,7 @@ import GeoPattern from 'geopattern'
 import Tag from '../Tag/Tag'
 import styles from './Project.css'
 import ProjectLinks from '../ProjectLinks/ProjectLinks'
+import store from '../../lib/state'
 
 export default class Project extends Component {
 	constructor(props) {
@@ -20,7 +21,10 @@ export default class Project extends Component {
 
 	desClick(event) {
 		let query = document.getElementById('search').value;
-		window.location.href = '#/' + this.props.id + '?' + query;
+		store.dispatch({type: 'PUT', data: {
+			search: query
+		}});
+		window.location.href = '#/' + this.props.id;
 	}
 
 	render() {

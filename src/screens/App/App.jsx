@@ -7,6 +7,7 @@ import styles from './App.css'
 
 import lib from '../../lib/utils'
 import projects from '../../data/projects'
+import store from '../../lib/state'
 
 
 export default class App extends Component {
@@ -19,9 +20,16 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
+		// use query param
 		let searchText = this.props.location.search.substring(1);
 		if (searchText) { // optimize, only needed when search has something
 			lib.setSearch(searchText);
+			return;
+		}
+		// use internal state
+		let st = store.getState();
+		if (st.search !== undefined && st.search){
+			lib.setSearch(st.search);
 		}
 	}
 
