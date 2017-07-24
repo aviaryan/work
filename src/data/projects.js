@@ -234,4 +234,115 @@ export default [
 		tags: ['sublime-text', 'regex'],
 		github: 'https://github.com/aviaryan/lc3-sublime'
 	},
+	{
+		id: 'close-folder',
+		name: 'Close Folder',
+		date: '2015',
+		desc: 'A simple Sublime Text plugin to close all open files of current directory or all open files inside some directory.',
+		more: 'Supports Sublime Text 2 and 3. Available on Package Control as CloseFolder',
+		tags: ['sublime-text'],
+		github: 'https://github.com/aviaryan/CloseFolder'
+	},
+	{
+		id: 'quotesOnTheGo',
+		name: 'Quotes On The Go',
+		date: '2017',
+		desc: 'Command line application that shows you a random quote using forismatic.com API.',
+		tags: ['golang', 'cli'],
+		github: 'https://github.com/aviaryan/quotesOnTheGo'
+	},
+	{
+		id: 'csbed',
+		name: 'Counter Strike Bot Editor',
+		date: '2013',
+		desc: 'Counter Strike 1.6/CZ complete bot profiles editor with a GUI. Last updated on Jan 2013.',
+		tags: ['autohotkey', 'gui'],
+		github: 'https://github.com/aviaryan/Counter-Strike-Bot-Editor'
+	},
+	{
+		id: 'series-renamer',
+		name: 'Series Renamer',
+		date: '2015',
+		desc: 'Python script that connects to thetvdb.com and renames your TV series in any fashion you want.',
+		tags: ['python', 'cli', 'regex'],
+		github: 'https://github.com/aviaryan/series-renamer',
+		websites: ['http://aviaryan.github.io/series-renamer/']
+	},
+	{
+		id: 'gmd',
+		name: 'Github Markdown Preview',
+		date: '2016',
+		desc: 'A simple webapp to preview markdown text (GFM) using Github API. Also allows you to print markdown document.',
+		tags: ['webapp'],
+		github: 'https://github.com/aviaryan/javascripts/tree/gh-pages/github.md',
+		websites: ['http://gmd.aavi.me/']
+	},
+	{
+		id: 'gig',
+		name: 'Gradient Image generator',
+		date: '2015',
+		desc: 'A tool to convert CSS gradients to image files. Height and width of the image can be set by the user.',
+		tags: ['webapp'],
+		github: 'https://github.com/aviaryan/javascripts#gradient-image-generator-gig',
+		websites: ['http://gig.aavi.me/']
+	},
+	{
+		id: 'puzzle8',
+		name: 'Puzzle-8',
+		date: '2016',
+		desc: '8-Puzzle game in Android. Includes automatic puzzle solver.',
+		tags: ['android', 'game'],
+		github: 'https://github.com/aviaryan/CSwA_puzzle8'
+	},
+	{
+		id: 'nkm-server',
+		name: 'NowKnowMore server',
+		date: '2016',
+		desc: 'Now Know More is a news aggregation service that allows you to follow any topic of your interest and get latest news on the same.',
+		more: 'The topic can by anything from "Good Recipes" to "Stock Market" to "Fitness Tips". The whole thing was built in 8 hrs with swagger API documentation and integrated unit testing.',
+		tags: ['backend', 'flask', 'python'],
+		github: 'https://github.com/aviaryan/nkm-server'
+	},
+	{
+		id: 'dockerfiles',
+		name: 'Dockerfiles',
+		date: '2016',
+		desc: 'Free, useful Docker images built by me.',
+		tags: ['docker'],
+		github: 'https://github.com/aviaryan/Dockerfiles'
+	},
+	{
+		id: 'emojiui',
+		name: 'EmojiUI',
+		date: '2016',
+		desc: 'Offline and cross-platform emoji finding tool using Electron.',
+		tags: ['npm', 'js', 'electron'],
+		github: 'https://github.com/aviaryan/emojiui'
+	},
+	{
+		id: 'lxiym-pdf',
+		name: 'Learn X in Y minutes - PDF',
+		date: '2015-16',
+		desc: 'Small code-oriented PDFs to master any programming language.',
+		tags: ['python', 'scripting'],
+		github: 'https://github.com/aviaryan/learnxinyminutes-pdf'
+	},
+	{
+		id: 'ots-2016-cal',
+		name: 'OTS 2016 Google Calendar',
+		date: '2016',
+		desc: 'A quick and dirty little thing that takes OTS 2016 schedule (json) and creates Google Calendars (and iCalendars .ics) out of it.',
+		tags: ['golang', 'scripting', 'ci'],
+		github: 'https://github.com/aviaryan/opentechsummit-2016-calendar'
+	},
+	{
+		id: 'ahk-ci',
+		name: 'AutoHotkey CI',
+		date: '2016',
+		desc: 'Example project to demonstrate how to use AppVeyor to set up continuous testing for an AutoHotkey project.',
+		tags: ['autohotkey', 'scripting', 'ci'],
+		github: 'https://github.com/aviaryan/Ahk-CI-Example',
+		websites: ['https://autohotkey.com/boards/viewtopic.php?f=6&t=16168']
+	},
+
 ]
