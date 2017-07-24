@@ -1,0 +1,15 @@
+# ignore all
+/*
+
+# un-ignore certain files
+!.gitignore
+!index.html
+!.nojekyll
+# un-ignore directories
+!*/
+# ignore directories
+src/
+node_modules/
+.idea/
+# do I even need to say
+.DS_Store
