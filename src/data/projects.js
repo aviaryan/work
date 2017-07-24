@@ -21,9 +21,8 @@ export default [
 		id: 'su4ahk',
 		name: 'Sublime 4 AutoHotkey',
 		desc: 'A Sublime Text addon to do AutoHotkey coding in the editor. Provides much more than a Sublime Text package.',
-		github: 'https://github.com/aviaryan/Clipjump',
+		github: 'https://github.com/aviaryan/Sublime4Autohotkey',
 		date: '2013-14',
-		websites: ['http://git.io'],
 		tags: ['autohotkey', 'sublime-text']
 	},
 	{

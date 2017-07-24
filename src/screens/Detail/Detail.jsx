@@ -34,7 +34,7 @@ export default class ProjectDetail extends Component {
 		let websitesDOM = [];
 		if (project.websites) {
 			websitesDOM = project.websites.map((w) =>
-				<div key={w}>Website: <a href={w} target="_blank">{w}</a></div>
+				<div key={w}>Website: <a href={w} target="_blank">{lib.getDomain(w)}</a></div>
 			);
 		}
 		// render

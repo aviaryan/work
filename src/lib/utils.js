@@ -2,8 +2,8 @@ import projects from '../data/projects'
 
 export default {
 	/*
-   * searchProjects filters the projects
-   */
+	 * searchProjects filters the projects
+	 */
 	filterProjects: (projects, query) => {
 		let p = [];
 		query = query.toLowerCase(); // lower case better searching
@@ -49,5 +49,24 @@ export default {
 		// fire event https://stackoverflow.com/questions/23892547/
 		let event = new Event('input', { bubbles: true });
 		search.dispatchEvent(event);
+	},
+
+	/*
+	 * get domain from link
+	 * https://stackoverflow.com/questions/8498592/extract-hostname-name-from-string
+	 */
+	getDomain: (url) => {
+		let hostname;
+		//find & remove protocol (http, ftp, etc.) and get hostname
+		if (url.indexOf("://") > -1) {
+			hostname = url.split('/')[2];
+		} else {
+			hostname = url.split('/')[0];
+		}
+		// find & remove port number
+		hostname = hostname.split(':')[0];
+		// find & remove "?"
+		hostname = hostname.split('?')[0];
+		return hostname;
 	}
 }
