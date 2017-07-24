@@ -13,7 +13,8 @@
 }
 
 .projectTitleSmall, .projectTitle {
-	height: 2rem;
+	min-height: 2rem;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 }
@@ -91,7 +92,7 @@
 		height: 180px;
 	}
 	.projectTitle, .projectTitleSmall {
-		height: auto;
+		min-height: none;
 		flex-wrap: wrap;
 	}
 }

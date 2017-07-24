@@ -30,9 +30,11 @@ export default [
 		id: 'hinix',
 		name: 'Hinix',
 		desc: 'Android game based on the popular classic Boggle. Distributed on Play Store with 4.5+ rating.',
+		more: 'Champion Hackathon project.',
 		date: '2016',
 		github: 'https://github.com/aviaryan/Hinix',
-		tags: ['android', 'game']
+		tags: ['android', 'game'],
+		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
 	},
 	{
 		id: 'cfbuddy',
@@ -165,7 +167,7 @@ export default [
 		name: 'Anime Catalog',
 		date: '2017',
 		desc: 'Full stack app that allows users to login and list down favorite anime series.',
-		tags: ['webapp', 'backend', 'oauth', 'flask'],
+		tags: ['webapp', 'backend', 'flask', 'python'],
 		github: 'https://github.com/aviaryan/ud-catalog'
 	},
 	{
@@ -176,5 +178,60 @@ export default [
 		tags: ['website', 'blog', 'jekyll'],
 		github: 'https://github.com/aviaryan/aviaryan.github.com',
 		websites: ['http://aviaryan.github.io']
+	},
+	{
+		id: 'dls',
+		name: 'DLS',
+		date: '2016',
+		desc: 'Direct Link Service. A pastebin for text and uploading files where you can choose a custom link.',
+		more: 'Also file and text will be accessible/downloadable from easy to remember direct links.',
+		tags: ['flask', 'backend', 'python'],
+		github: 'https://github.com/aviaryan/dls',
+		websites: ['http://dls.aviaryan.in/']
+	},
+	{
+		id: 'orga-server',
+		name: 'Open Event Server',
+		date: '2016-17',
+		desc: 'API server to enable organizers to manage events from concerts to conferences and meet-ups. Part of the open event ecosystem.',
+		more: 'Deployable on Digital Ocean, Google Cloud, EC 2 and Heroku.',
+		tags: ['flask', 'backend', 'python'],
+		github: 'https://github.com/fossasia/open-event-orga-server',
+		websites: ['https://open-event-dev.herokuapp.com', 'https://eventyay.com']
+	},
+	{
+		id: 'competitive',
+		name: 'Competitive Codes',
+		date: '2015-present',
+		desc: 'This project contains all the codes I made in my journey of competitive programming.',
+		more: "I prefer to write in CPP. Have lost interest in competitive programming recently, more aligned towards development.",
+		tags: ['algorithm', 'data-structures', 'cpp'],
+		github: 'https://github.com/aviaryan/competitive'
+	},
+	{
+		id: 'sub-notebook',
+		name: 'Sublime Notebook',
+		date: '2017',
+		desc: 'Sublime Notebook is an attempt to use Sublime Text as a complete note taking application.',
+		tags: ['sublime-text', 'python'],
+		github: 'https://github.com/aviaryan/SublimeNotebook',
+		websites: ['https://medium.com/aviaryan/sublime-notebook-an-attempt-to-use-sublime-text-as-my-note-taking-application-b8d846c47905#.hy8alq2ip']
+	},
+	{
+		id: 'lcpscancode',
+		name: 'CC Licenses Parser for Scancode',
+		date: '2017',
+		desc: 'This script scans Creative Commons License pages and generate scancode data files.',
+		tags: ['scripting', 'python', 'regex'],
+		github: 'https://github.com/aviaryan/cc-licenses-parser-scancode'
+	},
+	{
+		id: 'lc3-sublime',
+		name: 'LC3 Sublime',
+		date: '2015',
+		desc: 'A Package to provide syntax highlighting for LC3 .asm files in Sublime Text.',
+		more: '"Goto Symbol" feature in Sublime Text corresponds to labels in the assembly code.',
+		tags: ['sublime-text', 'regex'],
+		github: 'https://github.com/aviaryan/lc3-sublime'
 	},
 ]

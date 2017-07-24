@@ -6,7 +6,7 @@ export default class Search extends Component {
 	render() {
 		return (
 			<input type="search" id="search" placeholder="Filter" autoComplete="off"
-						 className={styles.search} onChange={this.props.changeHandler}/>
+						 className={styles.search} onChange={this.props.changeHandler} autoFocus="autofocus"/>
 		)
 	}
 }
