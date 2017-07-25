@@ -36,6 +36,7 @@ module.exports = {
 		publicPath: '/dist/',
 		filename: 'bundle.js'
 	},
+	node: { Buffer: false },  // https://github.com/btmills/geopattern/issues/32
 	plugins: [
 		// extract text
 		new ExtractTextPlugin("styles.css"),
