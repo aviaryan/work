@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import GeoPattern from 'geopattern'
 
 import Tag from '../Tag/Tag'
 import styles from './Project.css'
 import ProjectLinks from '../ProjectLinks/ProjectLinks'
 import store from '../../lib/state'
-// import ldColor from '../../lib/ligthenDarkenColor'
+import patternGen from '../../lib/pattern'
+
 
 export default class Project extends Component {
 	constructor(props) {
@@ -14,9 +14,7 @@ export default class Project extends Component {
 	}
 
 	componentDidMount() {
-		let pattern = GeoPattern.generate(this.props.name, {
-			baseColor: '#d2f9a8' // #f0fab8
-		});
+		let pattern = patternGen(this.props.name);
 		document.getElementsByClassName(this.props.id)[0].style.backgroundColor = pattern.color;
 		// let desc = document.getElementsByClassName(this.props.id + 'desc')[0];
 		// desc.style.backgroundColor = ldColor(pattern.color, 10);

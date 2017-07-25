@@ -7,9 +7,18 @@ import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'
 import GitHubStar from '../../components/GitHubStar/GitHubStar'
 import state from '../../lib/state'
+import patternGen from '../../lib/pattern'
+import ldColor from '../../lib/ligthenDarkenColor'
 
 
 export default class ProjectDetail extends Component {
+
+	constructor(props){
+		super(props);
+		this.state = {
+			project: lib.getProjectById(this.props.match.params.id)
+		};
+	}
 
 	tagClick(event) {
 		let tag = event.target.textContent;
@@ -19,8 +28,13 @@ export default class ProjectDetail extends Component {
 		window.location.href = '#';
 	}
 
+	componentDidMount() {
+		let pattern = patternGen(this.state.project.name);
+		document.getElementsByClassName(styles.name)[0].style.color = ldColor(pattern.color, -90);
+	}
+
 	render() {
-		let project = lib.getProjectById(this.props.match.params.id);
+		let project = this.state.project;
 		// 404
 		if (project === null) {
 			return (

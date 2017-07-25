@@ -5,6 +5,7 @@
 .backLink {
 	text-decoration: none;
 	color: inherit;
+	/*opacity: 0.6;*/
 	margin-right: 1rem;
 }
 
