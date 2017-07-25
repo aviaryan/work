@@ -10,7 +10,7 @@ export default class ProjectLinks extends Component {
 		if (this.props.websites) {
 			websitesDOM = this.props.websites.map((w) =>
 				<a key={w} href={w} target="_blank">
-					<img className={styles.logo} src="../../../img/link-symbol.svg" />
+					<img className={styles.logo} src="/img/link-symbol.svg" />
 				</a>
 			);
 		}
@@ -20,7 +20,7 @@ export default class ProjectLinks extends Component {
 
 				{this.props.github &&
 				<a href={this.props.github} target="_blank">
-					<img className={styles.logo} src="../../../img/github-logo.svg" />
+					<img className={styles.logo} src="/img/github-logo.svg" />
 				</a>
 				}
 

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class GitHubStar extends Component {
 	render() {
-		let re = new RegExp('.*github[^\/]*\/([^\/]+)\/([^/]+)($|.*)', 'i');
+		let re = new RegExp('.*github[^\/]*\/([^\/]+)\/([^/\#]+)($|.*)', 'i');
 		let found = this.props.github.match(re);
 		return (
 			<iframe
