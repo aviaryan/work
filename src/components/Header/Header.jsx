@@ -7,7 +7,7 @@ export default class Header extends Component {
 		return(
 			<div>
 				<div className={styles.header}>
-					Avi Aryan
+					<a className={styles.profileLink} href="http://aviaryan.in" target="_blank">Avi Aryan</a>
 				</div>
 				<div className={styles.tagline}>
 					Rockstar developer

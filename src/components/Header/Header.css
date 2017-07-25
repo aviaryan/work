@@ -7,6 +7,11 @@
 	color: dimgray;
 }
 
+.profileLink {
+	text-decoration: none;
+	color: inherit;
+}
+
 @media all and (max-width: 550px) {
 	.header { /* single row */
 		font-size: 1.3rem;

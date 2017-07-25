@@ -14,7 +14,8 @@ export default {
 			fail = false;
 			for (let q of qrArr) {
 				// take single query
-				let check = (i['name'].toLowerCase().search(q) > -1) || (JSON.stringify(i['tags']).search(q) > -1);
+				let check = (i['name'].toLowerCase().search(q) > -1) || (JSON.stringify(i['tags']).search(q) > -1)
+					|| (i['date'].toLowerCase().search(q) > -1);
 				if (!check) {
 					fail = true;
 					break;
