@@ -51,6 +51,13 @@ export default class ProjectDetail extends Component {
 				<div key={w}>Website: <a href={w} target="_blank">{lib.getDomain(w)}</a></div>
 			);
 		}
+		// github
+		let gh = "";
+		if (project.github){
+			let re = new RegExp('.*github[^\/]*\/([^\/]+(\/[^\/\#]+)?).*$', 'i');
+			let found = project.github.match(re);
+			gh = found[1];
+		}
 		// render
 		return (
 			<div className={[appStyles.app, styles.page].join(' ')}>
@@ -69,7 +76,7 @@ export default class ProjectDetail extends Component {
 
 				<div className={styles.links}>
 					{project.github &&
-					<div>GitHub: <a href={project.github} target="_blank">{project.github}</a></div>}
+					<div>GitHub: <a href={project.github} target="_blank">{gh}</a></div>}
 					{websitesDOM}
 				</div>
 
