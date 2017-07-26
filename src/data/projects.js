@@ -12,6 +12,7 @@ let projects = [
 		],
 		date: '2013-16',
 		github: 'https://github.com/aviaryan/Clipjump',
+		weight: 10,
 		websites: ['https://bit.ly/clipjump'],
 		tags: ['autohotkey', 'clipboard']
 	},
@@ -41,6 +42,7 @@ let projects = [
 		date: '2016',
 		github: 'https://github.com/aviaryan/Hinix',
 		tags: ['android', 'game'],
+		weight: 9,
 		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
 	},
 	{
@@ -126,6 +128,7 @@ let projects = [
 		date: '2014',
 		desc: ['Library to extract the minimum code needed from an external library OR say it strips out unused code.'],
 		tags: ['autohotkey', 'regex', 'scripting'],
+		weight: 10,
 		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
 	},
 	{
@@ -134,6 +137,7 @@ let projects = [
 		date: '2016-17',
 		desc: ['Curated list of awesome web apps that work without requesting you to create an account.'],
 		tags: ['awesome-list'],
+		weight: 9,
 		github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
 	},
 	{
@@ -150,6 +154,7 @@ let projects = [
 		date: '2017',
 		desc: ['A simple, lightweight, responsive portfolio design.'],
 		tags: ['website'],
+		weight: 2,
 		github: 'https://github.com/aviaryan/ud-portfolio',
 		websites: ['http://aviaryan.in/ud-portfolio/']
 	},
@@ -167,6 +172,7 @@ let projects = [
 		date: '2017-present',
 		desc: ['Commanline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.'],
 		tags: ['golang', 'cli'],
+		weight: 10,
 		github: 'https://github.com/appbaseio/abc'
 	},
 	{
@@ -231,6 +237,7 @@ let projects = [
 		date: '2017',
 		desc: ['This script scans Creative Commons License pages and generate scancode data files.'],
 		tags: ['scripting', 'python', 'regex'],
+		weight: 1,
 		github: 'https://github.com/aviaryan/cc-licenses-parser-scancode'
 	},
 	{
@@ -488,11 +495,11 @@ function compareDates(a, b) {
 	// date value generator
 	const fd = (date) => {
 		if (date.indexOf('present') > -1)
-			return 'INF'; // largest
+			return 1000; // largest
 		else {
 			for (let i of ['19', '18', '17', '16', '15', '14', '13']) {
 				if (date.indexOf(i) > -1)
-					return i;
+					return parseInt(i);
 			}
 		}
 	};
@@ -501,8 +508,11 @@ function compareDates(a, b) {
 		return 1;
 	} else if (fd(a.date) > fd(b.date)) {
 		return -1;
+	} else {
+		// a comes before b in original array
+		let comp = (a.weight || 5) <= (b.weight || 5);
+		return (comp) ? 1 : -1;
 	}
-	return 0;
 }
 
 projects.sort(compareDates);
