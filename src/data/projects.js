@@ -1,4 +1,8 @@
-export default [
+/*
+ * Projects listing
+ */
+
+let projects = [
 	{
 		id: 'clipjump',
 		name: 'Clipjump',
@@ -474,4 +478,33 @@ export default [
 		tags: ['js', 'regex'],
 		github: 'https://github.com/aviaryan/lightAHK'
 	}
-]
+];
+
+
+/*
+ * Sort and return
+ */
+function compareDates(a, b) {
+	// date value generator
+	const fd = (date) => {
+		if (date.indexOf('present') > -1)
+			return 'INF'; // largest
+		else {
+			for (let i of ['19', '18', '17', '16', '15', '14', '13']) {
+				if (date.indexOf(i) > -1)
+					return i;
+			}
+		}
+	};
+
+	if (fd(a.date) < fd(b.date)) {
+		return 1;
+	} else if (fd(a.date) > fd(b.date)) {
+		return -1;
+	}
+	return 0;
+}
+
+projects.sort(compareDates);
+
+export default projects;

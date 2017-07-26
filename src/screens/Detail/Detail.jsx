@@ -59,8 +59,8 @@ export default class ProjectDetail extends Component {
 			gh = found[1];
 		}
 		// desc
-		let descDOM = project.desc.map((d) =>
-			<p>{d}</p>
+		let descDOM = project.desc.map((d, index) =>
+			<p key={project.id + "" + index}>{d}</p>
 		);
 		// render
 		return (
