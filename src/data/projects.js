@@ -41,7 +41,7 @@ let projects = [
 			'Champion Hackathon project.'],
 		date: '2016',
 		github: 'https://github.com/aviaryan/Hinix',
-		tags: ['android', 'game'],
+		tags: ['android', 'java', 'game'],
 		weight: 9,
 		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
 	},
@@ -50,7 +50,7 @@ let projects = [
 		name: 'CF Buddy',
 		date: '2017',
 		desc: ['App that uses CodeForces API to show programming problems, user profiles, blog posts and contests.'],
-		tags: ['android', 'codeforces'],
+		tags: ['android', 'java', 'codeforces'],
 		github: 'https://github.com/aviaryan/CFBuddy'
 	},
 	{
@@ -306,7 +306,7 @@ let projects = [
 		name: 'Puzzle-8',
 		date: '2016',
 		desc: ['8-Puzzle game in Android. Includes automatic puzzle solver.'],
-		tags: ['android', 'game'],
+		tags: ['android', 'java', 'game'],
 		github: 'https://github.com/aviaryan/CSwA_puzzle8'
 	},
 	{
@@ -406,7 +406,7 @@ let projects = [
 		name: 'Algorithms 101',
 		date: '2015-16',
 		desc: ['Algorithm implementations from my 4th semester Algorithms 101 course.'],
-		tags: ['cpp', 'algorithms', 'data-structures'],
+		tags: ['cpp', 'algorithm', 'data-structures'],
 		github: 'https://github.com/aviaryan/algorithms-course'
 	},
 	{
@@ -435,7 +435,7 @@ let projects = [
 		name: 'Popular Movies',
 		date: '2016',
 		desc: ['An app to showcase trending and popular movies.'],
-		tags: ['android'],
+		tags: ['android', 'java'],
 		github: 'https://github.com/aviaryan/PopularMovies'
 	},
 	{

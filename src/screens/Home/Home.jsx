@@ -58,7 +58,7 @@ export default class App extends Component {
 
 	inputChange(event) {
 		// something was added in the filter. We had AND matching right now.
-		let useState = (event.target.value.length > this.state.searchText.length);
+		let useState = (event.target.value.indexOf(this.state.searchText) == 0);
 		this.setState({
 			searchText: event.target.value,
 			projects: lib.filterProjects(useState ? this.state.projects : projects, event.target.value)

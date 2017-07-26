@@ -12,7 +12,8 @@ export default class Tag extends Component {
 		if (dataIndex > -1){ // exists, remove it
 			vals.splice(dataIndex, 1);
 		} else {
-			vals.push(data);
+			// vals.push(data);
+			vals = [data];
 		}
 		lib.setSearch(vals.join(' '));
 	}
