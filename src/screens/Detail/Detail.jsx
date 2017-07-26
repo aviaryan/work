@@ -58,6 +58,10 @@ export default class ProjectDetail extends Component {
 			let found = project.github.match(re);
 			gh = found[1];
 		}
+		// desc
+		let descDOM = project.desc.map((d) =>
+			<p>{d}</p>
+		);
 		// render
 		return (
 			<div className={[appStyles.app, styles.page].join(' ')}>
@@ -81,8 +85,7 @@ export default class ProjectDetail extends Component {
 				</div>
 
 				<div className={styles.desc}>
-					{project.desc}
-					<p>{project.more}</p>
+					{descDOM}
 				</div>
 
 				<div className={styles.tags}>

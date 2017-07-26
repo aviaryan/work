@@ -46,7 +46,7 @@ export default class Project extends Component {
 					{this.props.date}
 				</div>
 				}
-				<div className={styles.projectDesc} onClick={this.desClick}>{this.props.desc}</div>
+				<div className={styles.projectDesc} onClick={this.desClick}>{this.props.desc[0]}</div>
 				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)
