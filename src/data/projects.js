@@ -64,7 +64,7 @@ export default [
 		name: 'Popular Places in Patna',
 		desc: ['A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.'],
 		date: '2017',
-		tags: ['webpack', 'webapp'],
+		tags: ['webpack', 'webapp', 'js'],
 		github: 'https://github.com/aviaryan/pop-places-patna',
 		websites: ['http://aviaryan.in/pop-places-patna/']
 	},
@@ -383,5 +383,97 @@ export default [
 		desc: ['GCIDE dictionary in json format. Also includes a command-line dictionary application.'],
 		tags: ['python', 'scripting', 'scraping'],
 		github: 'https://github.com/aviaryan/gcide-dictionary-json'
+	},
+	{
+		id: 'bootstrap-chm',
+		name: 'Bootstrap CHM',
+		date: '2015-16',
+		desc: ['Bootstrap documentation in chm, complete with Index and TOC. Especially suited for Windows based developers.'],
+		tags: ['python', 'scripting', 'scraping'],
+		github: 'https://github.com/aviaryan/bootstrap-chm'
+	},
+	{
+		id: 'algorithms-course',
+		name: 'Algorithms 101',
+		date: '2015-16',
+		desc: ['Algorithm implementations from my 4th semester Algorithms 101 course.'],
+		tags: ['cpp', 'algorithms', 'data-structures'],
+		github: 'https://github.com/aviaryan/algorithms-course'
+	},
+	{
+		id: 'brain-games',
+		name: 'Brain Games',
+		date: '2015',
+		desc: [
+			'Games to boost one\'s brain, written in Python using Pyglet. Includes 6 different exciting games.',
+			'Pre-compiled binaries available for Windows.'
+		],
+		tags: ['python', 'game', 'gui'],
+		github: 'https://github.com/aviaryan/BrainGames'
+	},
+	{
+		id: 'ahk-best',
+		name: 'Ahk Best Practises',
+		date: '2016',
+		desc: [
+			'Good practices in AutoHotkey coding that will help avoid bugs and make your code more readable'
+		],
+		tags: ['autohotkey'],
+		github: 'https://github.com/aviaryan/Ahk-Best-Practices'
+	},
+	{
+		id: 'pop-movies',
+		name: 'Popular Movies',
+		date: '2016',
+		desc: ['An app to showcase trending and popular movies.'],
+		tags: ['android'],
+		github: 'https://github.com/aviaryan/PopularMovies'
+	},
+	{
+		id: 'ini-translator',
+		name: 'INI Translator',
+		date: '2013',
+		desc: [
+			'A program to translate ini-formatted files (key=value) in one go. Supports all popular formats.',
+			'Uses scraping for Google Translate to achieve the results.'
+		],
+		tags: ['autohotkey', 'scripting', 'scraping'],
+		github: 'https://github.com/aviaryan/initranslator'
+	},
+	{
+		id: 'shape-recog',
+		name: 'Shape Recognition',
+		date: '2015',
+		desc: [
+			'Shape Recog is a figure analyzer and synthesizer. It corrects the figure you have drawn to fit a known geometrical representation.',
+			'The developed version only checks if it\'s square, rectangle, triangle, circle, line or INVALID.'
+		],
+		tags: ['autohotkey', 'maths', 'gui'],
+		github: 'https://github.com/aviaryan/shape-recog'
+	},
+	{
+		id: 'highlighter-ahk',
+		name: 'AutoHotkey Syntax Highlighter',
+		date: '2014',
+		desc: ['AutoHotkey Syntax Highlighter Brush with Zenburn and GitHub themes'],
+		tags: ['js', 'regex'],
+		github: 'https://github.com/aviaryan/highlighter-ahk-zenburn'
+	},
+	{
+		id: 'light-ahk',
+		name: 'Light AHK',
+		date: '2014',
+		desc: ['Really lightweight syntax highlighting for AutoHotkey. Only 6.4kb non-gzipped overhead.',
+		'This includes syntax highlighting library + css styles.'],
+		tags: ['js', 'regex'],
+		github: 'https://github.com/aviaryan/lightAHK'
+	},
+	{
+		id: 'ini-hl',
+		name: 'INI Highlighter',
+		date: '2013-14',
+		desc: ['Syntax Highlighter Brush for INI format'],
+		tags: ['js', 'regex'],
+		github: 'https://github.com/aviaryan/lightAHK'
 	}
 ]
