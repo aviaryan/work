@@ -14,10 +14,8 @@ export default [
 	{
 		id: 'shach',
 		name: 'Shach',
-		desc: [
-			'Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.'
-		],
-		github: 'https://github.com/aviaryan/shach',
+		desc: ['Shach is a compiler written in Yacc/Lex that converts a common language to Bash and Batch.'],
+		github: 'https://github.com/aviaryan/shach/blob/master/REPORT.md',
 		date: '2017',
 		tags: ['compiler', 'cpp']
 	},

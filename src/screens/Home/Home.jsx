@@ -15,6 +15,7 @@ export default class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			searchText: '',
 			projects: projects
 		};
 		this.inputChange = this.inputChange.bind(this);
@@ -56,8 +57,11 @@ export default class App extends Component {
 	}
 
 	inputChange(event) {
+		// something was added in the filter. We had AND matching right now.
+		let useState = (event.target.value.length > this.state.searchText.length);
 		this.setState({
-			projects: lib.filterProjects(projects, event.target.value)
+			searchText: event.target.value,
+			projects: lib.filterProjects(useState ? this.state.projects : projects, event.target.value)
 		});
 	}
 
