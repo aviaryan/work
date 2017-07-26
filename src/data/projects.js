@@ -343,5 +343,36 @@ export default [
 		github: 'https://github.com/aviaryan/Ahk-CI-Example',
 		websites: ['https://autohotkey.com/boards/viewtopic.php?f=6&t=16168']
 	},
-
+	{
+		id: 'collegare-server',
+		name: 'Collegare Server',
+		date: '2015',
+		desc: 'Unofficial college\'s social networking platform. I worked on the backend.',
+		tags: ['php', 'backend'],
+		github: 'https://github.com/aviaryan/collegare-server'
+	},
+	{
+		id: 'pythons',
+		name: 'Pythons',
+		date: '2016',
+		desc: 'Little python scripts I made to make my life easier. Scripts like Twitter follow bot, emoji searching tool, encrypt/decrypt tool and so on.',
+		tags: ['python', 'scripting'],
+		github: 'https://github.com/aviaryan/pythons'
+	},
+	{
+		id: 'ahks',
+		name: 'AutoHotkey scripts',
+		date: '2013-16',
+		desc: 'A collection of Autohotkey scripts and libraries authored by me',
+		tags: ['autohotkey', 'scripting'],
+		github: 'https://github.com/aviaryan/autohotkey-scripts'
+	},
+	{
+		id: 'gcide',
+		name: 'GCIDE JSON',
+		date: '2015-16',
+		desc: 'GCIDE dictionary in json format. Also includes a command-line dictionary application.',
+		tags: ['python', 'scripting', 'scraping'],
+		github: 'https://github.com/aviaryan/gcide-dictionary-json'
+	}
 ]
