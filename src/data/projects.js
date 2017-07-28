@@ -12,7 +12,7 @@ let projects = [
 		],
 		date: '2013-16',
 		github: 'https://github.com/aviaryan/Clipjump',
-		weight: 10,
+		weight: 2,
 		websites: ['https://bit.ly/clipjump'],
 		tags: ['autohotkey', 'clipboard']
 	},
@@ -42,7 +42,7 @@ let projects = [
 		date: '2016',
 		github: 'https://github.com/aviaryan/Hinix',
 		tags: ['android', 'java', 'game'],
-		weight: 9,
+		weight: 1,
 		websites: ['https://play.google.com/store/apps/details?id=in.aviaryan.hinix']
 	},
 	{
@@ -93,6 +93,7 @@ let projects = [
 		id: 'bigeval',
 		name: 'BigEval.js',
 		date: '2015-16',
+		weight: 1,
 		desc: ['JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.'],
 		tags: ['js', 'npm'],
 		github: 'https://github.com/aviaryan/BigEval.js'
@@ -103,6 +104,7 @@ let projects = [
 		date: '2017-present',
 		desc: ['Implementation of popular algorithms and data structures in popular languages. Lead maintainer of the project.'],
 		tags: ['algorithm', 'data-structures'],
+		weight: -1,
 		github: 'https://github.com/iiitv/algos'
 	},
 	{
@@ -128,7 +130,7 @@ let projects = [
 		date: '2014',
 		desc: ['Library to extract the minimum code needed from an external library OR say it strips out unused code.'],
 		tags: ['autohotkey', 'regex', 'scripting'],
-		weight: 10,
+		weight: 2,
 		github: 'https://github.com/aviaryan/autohotkey-scripts/blob/master/Tools/stealFuncfromLib.ahk'
 	},
 	{
@@ -137,7 +139,6 @@ let projects = [
 		date: '2016-17',
 		desc: ['Curated list of awesome web apps that work without requesting you to create an account.'],
 		tags: ['awesome-list'],
-		weight: 9,
 		github: 'https://github.com/aviaryan/awesome-no-login-web-apps'
 	},
 	{
@@ -154,7 +155,6 @@ let projects = [
 		date: '2017',
 		desc: ['A simple, lightweight, responsive portfolio design.'],
 		tags: ['website'],
-		weight: 2,
 		github: 'https://github.com/aviaryan/ud-portfolio',
 		websites: ['http://aviaryan.in/ud-portfolio/']
 	},
@@ -170,9 +170,10 @@ let projects = [
 		id: 'abc',
 		name: 'ABC',
 		date: '2017-present',
-		desc: ['Commanline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.'],
+		desc: ['Commandline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.',
+			'Source databases like Postgres, Mongo, MySQL, MSSQL etc are supported.'],
 		tags: ['golang', 'cli'],
-		weight: 10,
+		weight: 2,
 		github: 'https://github.com/appbaseio/abc'
 	},
 	{
@@ -211,6 +212,7 @@ let projects = [
 			'Deployable on Digital Ocean, Google Cloud, EC 2 and Heroku.'],
 		tags: ['flask', 'backend', 'python'],
 		github: 'https://github.com/fossasia/open-event-orga-server',
+		weight: 1,
 		websites: ['https://open-event-dev.herokuapp.com', 'https://eventyay.com']
 	},
 	{
@@ -237,7 +239,7 @@ let projects = [
 		date: '2017',
 		desc: ['This script scans Creative Commons License pages and generate scancode data files.'],
 		tags: ['scripting', 'python', 'regex'],
-		weight: 1,
+		weight: -2,
 		github: 'https://github.com/aviaryan/cc-licenses-parser-scancode'
 	},
 	{
@@ -264,6 +266,7 @@ let projects = [
 		date: '2017',
 		desc: ['Command line application that shows you a random quote using forismatic.com API.'],
 		tags: ['golang', 'cli'],
+		weight: -2,
 		github: 'https://github.com/aviaryan/quotesOnTheGo'
 	},
 	{
@@ -281,6 +284,7 @@ let projects = [
 		desc: ['Python script that connects to thetvdb.com and renames your TV series in any fashion you want.'],
 		tags: ['python', 'cli', 'regex'],
 		github: 'https://github.com/aviaryan/series-renamer',
+		weight: 1,
 		websites: ['http://aviaryan.github.io/series-renamer/']
 	},
 	{
@@ -383,6 +387,7 @@ let projects = [
 		date: '2013-16',
 		desc: ['A collection of Autohotkey scripts and libraries authored by me'],
 		tags: ['autohotkey', 'scripting'],
+		weight: 1,
 		github: 'https://github.com/aviaryan/autohotkey-scripts'
 	},
 	{
@@ -417,6 +422,7 @@ let projects = [
 			'Games to boost one\'s brain, written in Python using Pyglet. Includes 6 different exciting games.',
 			'Pre-compiled binaries available for Windows.'
 		],
+		weight: 2,
 		tags: ['python', 'game', 'gui'],
 		github: 'https://github.com/aviaryan/BrainGames'
 	},
@@ -473,7 +479,7 @@ let projects = [
 		name: 'Light AHK',
 		date: '2014',
 		desc: ['Really lightweight syntax highlighting for AutoHotkey. Only 6.4kb non-gzipped overhead.',
-		'This includes syntax highlighting library + css styles.'],
+			'This includes syntax highlighting library + css styles.'],
 		tags: ['js', 'regex'],
 		github: 'https://github.com/aviaryan/lightAHK'
 	},
@@ -492,26 +498,35 @@ let projects = [
  * Sort and return
  */
 function compareDates(a, b) {
+	// current year
+	const year = new Date().getFullYear();
+	// base year - when I started development
+	const baseYear = 2013 - 1;
+
 	// date value generator
 	const fd = (date) => {
 		if (date.indexOf('present') > -1)
-			return 1000; // largest
+			return year - baseYear + 1; // largest, so +1
 		else {
-			for (let i of ['19', '18', '17', '16', '15', '14', '13']) {
-				if (date.indexOf(i) > -1)
-					return parseInt(i);
+			for (let yr = year; yr > baseYear; yr--) {
+				if (date.indexOf(yr.toString().substring(3)) > -1) {
+					return yr - baseYear;
+				}
 			}
 		}
 	};
 
-	if (fd(a.date) < fd(b.date)) {
+	let wta = fd(a.date) + (a.weight || 0);
+	let wtb = fd(b.date) + (b.weight || 0);
+
+	if (wta < wtb) {
 		return 1;
-	} else if (fd(a.date) > fd(b.date)) {
+	} else if (wta > wtb) {
 		return -1;
 	} else {
 		// a comes before b in original array
-		let comp = (a.weight || 5) <= (b.weight || 5);
-		return (comp) ? 1 : -1;
+		// let comp = (a.weight || 5) <= (b.weight || 5);
+		return -1; // (comp) ? 1 : -1;
 	}
 }
 
