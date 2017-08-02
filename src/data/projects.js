@@ -68,7 +68,7 @@ let projects = [
 		name: 'Popular Places in Patna',
 		desc: ['A modern web-app showing popular places to visit in Patna using Google Maps and Foursquare data.'],
 		date: '2017',
-		tags: ['webpack', 'webapp', 'js'],
+		tags: ['webpack', 'webapp', 'javascript'],
 		github: 'https://github.com/aviaryan/pop-places-patna',
 		websites: ['http://aviaryan.in/pop-places-patna/']
 	},
@@ -86,7 +86,7 @@ let projects = [
 		name: 'typ3r.js',
 		date: '2017',
 		desc: ['JavaScript library to convert sane human readable text to a not s0 hUMaN Re@dAbLE t3xT. No external dependencies.'],
-		tags: ['js', 'npm'],
+		tags: ['javascript', 'npm'],
 		github: 'https://github.com/aviaryan/typ3r.js'
 	},
 	{
@@ -95,7 +95,7 @@ let projects = [
 		date: '2015-16',
 		weight: 1,
 		desc: ['JavaScript library to evaluate mathematical expressions from strings. Supports all advanced mathematics expressions.'],
-		tags: ['js', 'npm'],
+		tags: ['javascript', 'npm'],
 		github: 'https://github.com/aviaryan/BigEval.js'
 	},
 	{
@@ -146,7 +146,7 @@ let projects = [
 		name: 'KissAnime Batch Downloader',
 		date: '2017',
 		desc: ['Scripts that fetch download links of any series on KissAnime, KissAsian or KissCartoon and gives them to you in the form of a list.'],
-		tags: ['js', 'hacking'],
+		tags: ['javascript', 'hacking'],
 		github: 'https://github.com/aviaryan/Kissanime-Batch-Downloader'
 	},
 	{
@@ -282,7 +282,7 @@ let projects = [
 		name: 'Series Renamer',
 		date: '2015',
 		desc: ['Python script that connects to thetvdb.com and renames your TV series in any fashion you want.'],
-		tags: ['python', 'cli', 'regex'],
+		tags: ['python', 'cli', 'regex', 'pip'],
 		github: 'https://github.com/aviaryan/series-renamer',
 		weight: 1,
 		websites: ['http://aviaryan.github.io/series-renamer/']
@@ -337,7 +337,7 @@ let projects = [
 		name: 'EmojiUI',
 		date: '2016',
 		desc: ['Offline and cross-platform emoji finding tool using Electron.'],
-		tags: ['npm', 'js', 'electron'],
+		tags: ['npm', 'javascript', 'electron'],
 		github: 'https://github.com/aviaryan/emojiui'
 	},
 	{
@@ -471,7 +471,7 @@ let projects = [
 		name: 'AutoHotkey Syntax Highlighter',
 		date: '2014',
 		desc: ['AutoHotkey Syntax Highlighter Brush with Zenburn and GitHub themes'],
-		tags: ['js', 'regex'],
+		tags: ['javascript', 'regex'],
 		github: 'https://github.com/aviaryan/highlighter-ahk-zenburn'
 	},
 	{
@@ -480,7 +480,7 @@ let projects = [
 		date: '2014',
 		desc: ['Really lightweight syntax highlighting for AutoHotkey. Only 6.4kb non-gzipped overhead.',
 			'This includes syntax highlighting library + css styles.'],
-		tags: ['js', 'regex'],
+		tags: ['javascript', 'regex'],
 		github: 'https://github.com/aviaryan/lightAHK'
 	},
 	{
@@ -488,7 +488,7 @@ let projects = [
 		name: 'INI Highlighter',
 		date: '2013-14',
 		desc: ['Syntax Highlighter Brush for INI format'],
-		tags: ['js', 'regex'],
+		tags: ['javascript', 'regex'],
 		github: 'https://github.com/aviaryan/lightAHK'
 	}
 ];
