@@ -69,6 +69,10 @@ export default class App extends Component {
 		let projectDOM = this.state.projects.map((p) =>
 			<Project key={p.id} {...p}/>
 		);
+		// empty list of projects
+		if (projectDOM.length === 0){
+			projectDOM = (<div className={styles.noResults}>No results found</div>);
+		}
 		return (
 			<div className={styles.app}>
 				<header className={styles.headerDiv}>

@@ -25,6 +25,14 @@
 	flex-grow: 100;
 }
 
+.noResults {
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+	color: grey;
+}
+
 .footerDiv {
 	font-size: 0.9rem;
 	margin-top: 2rem;
