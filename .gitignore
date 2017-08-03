@@ -4,6 +4,7 @@ styles.css
 .DS_Store
 
 .idea/
+deploy/
 
 # local surge deploy
 CNAME
