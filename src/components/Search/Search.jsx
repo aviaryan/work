@@ -5,7 +5,7 @@ export default class Search extends Component {
 	// type=search helps with the (x) mark
 	render() {
 		return (
-			<input type="search" id="search" placeholder="Filter" autoComplete="off"
+			<input type="search" id="search" placeholder="Filter (e.g. 'backend python')" autoComplete="off"
 						 className={styles.search} onChange={this.props.changeHandler} autoFocus="autofocus"/>
 		)
 	}

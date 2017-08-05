@@ -13,3 +13,9 @@
 	outline: none !important;
 	border-bottom-color: lightseagreen;
 }
+
+@media all and (max-width: 550px) {
+	.search { /* single row */
+		font-size: 0.9rem;
+	}
+}

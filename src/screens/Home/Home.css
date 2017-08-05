@@ -40,6 +40,10 @@
 	color: slategray;
 }
 
+.horizSpace {
+	margin: 0 0.5rem;
+}
+
 .footerDiv a {
 	text-decoration: none;
 	border-bottom: 1px dotted;

@@ -83,7 +83,11 @@ export default class App extends Component {
 					{projectDOM}
 				</div>
 				<footer className={styles.footerDiv}>
-					<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a></div>
+					<div>
+						Avi's <a href="http://resume.aviaryan.in" target="_blank">resume</a>
+						<span className={styles.horizSpace}>&middot;</span>
+						Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" target="_blank">Dave Gandy</a>
+					</div>
 				</footer>
 			</div>
 		)
