@@ -490,6 +490,19 @@ let projects = [
 		desc: ['Syntax Highlighter Brush for INI format'],
 		tags: ['javascript', 'regex'],
 		github: 'https://github.com/aviaryan/lightAHK'
+	},
+	{
+		id: 'wtfeed',
+		name: 'What the Feed',
+		date: '2016',
+		desc: [
+			'What The Feed is a social media aggregration platform that helps you follow related social media accounts at once.',
+			'Suppose you are interested in some topic, say "Indian Finance", WTF will automatically find the leading social ' +
+				' media accounts for that topic, follow their posts and provide you with an aggregrated feed.',
+			'Twitter, Instagram and Tumblr are supported at the moment.'
+		],
+		tags: ['python', 'backend', 'django'],
+		github: 'https://github.com/iiitv/hackathon-fullstack-server'
 	}
 ];
 
