@@ -9,6 +9,7 @@ import GitHubStar from '../../components/GitHubStar/GitHubStar'
 import state from '../../lib/state'
 import patternGen from '../../lib/pattern'
 import ldColor from '../../lib/ligthenDarkenColor'
+import config from '../../data/config'
 
 
 export default class ProjectDetail extends Component {
@@ -31,6 +32,8 @@ export default class ProjectDetail extends Component {
 	componentDidMount() {
 		let pattern = patternGen(this.state.project.name);
 		document.getElementsByClassName(styles.name)[0].style.color = ldColor(pattern.color, -90);
+		// document's title
+		document.title = this.state.project.name + ' · ' + config.title;
 	}
 
 	render() {

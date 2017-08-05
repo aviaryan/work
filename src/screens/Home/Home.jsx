@@ -9,6 +9,7 @@ import styles from './Home.css'
 import lib from '../../lib/utils'
 import projects from '../../data/projects'
 import store from '../../lib/state'
+import config from '../../data/config'
 
 
 export default class App extends Component {
@@ -24,6 +25,8 @@ export default class App extends Component {
 	componentDidMount() {
 		// set header color
 		this.setHeaderColor();
+		// document's title
+		document.title = config.title;
 
 		// use query param
 		// generally passed manually so return
