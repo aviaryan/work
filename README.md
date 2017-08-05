@@ -2,14 +2,14 @@
 
 My portfolio. Built with React.
 
-### Dev
+## Dev
 
 ```sh
 yarn install
 yarn start
 ```
 
-### Libraries Used
+## Libraries Used
 
 ```sh
 React
@@ -18,13 +18,14 @@ Redux
 GeoPattern
 ```
 
-### Deployment
+## Deployment
 
-Run `yarn build` to generate bundle files with all the dependencies. 
+Run `yarn build` to generate bundle files with all the dependencies.
+ 
 Then use the `deploy.sh` script to deploy them to `gh-pages` branch.
 
 
-### Resources
+## Resources
 
 This is my first React project. I was only able to complete it because of these resources.
 
