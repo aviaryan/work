@@ -9,10 +9,24 @@ yarn install
 yarn start
 ```
 
+### Libraries Used
+
+```sh
+React
+React-Router
+Redux
+GeoPattern
+```
+
+### Deployment
+
+Run `yarn build` to generate bundle files with all the dependencies. 
+Then use the `deploy.sh` script to deploy them to `gh-pages` branch.
+
+
 ### Resources
 
-It is my first React project and my first JS project in a long time.
-Thanks to these guides.
+This is my first React project. I was only able to complete it because of these resources.
 
 ##### Getting started with React
 
