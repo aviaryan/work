@@ -1,11 +1,11 @@
 .project {
-	width: 29%;
+	width: 30%;
 	margin-top: 1rem;
 	padding: 1rem 1rem 1rem 1rem;
 	border: 0 solid #7d97ad;
 	/** this is tricky, can't rely on justify-content **/
-	margin-right: 0.5rem;
-	margin-left: 0.5rem;
+	/*margin-right: 0.5rem;*/
+	/*margin-left: 0.5rem;*/
 	height: 170px;
 	/* making height auto may help with mobile issues */
 	display: flex;
@@ -75,7 +75,6 @@
 @media all and (max-width: 1200px) {
 	.project {
 		width: 31%;
-		margin: 1rem 0 0 4px;
 		padding: 1rem 0.7rem 1rem 0.7rem;
 	}
 }
@@ -95,14 +94,14 @@
 @media all and (max-width: 1000px) {
 	.project {
 		width: 45%;
-		margin: 1rem 2px 0 4px;
+		/*margin: 1rem 2px 0 4px;*/
 		padding: 1rem 1rem 1rem 1rem;
 	}
 }
 
 @media all and (max-width: 820px) {
 	.project {
-		width: 43%;
+		width: 44%;
 		height: 180px;
 	}
 	.projectTitle, .projectTitleSmall {
@@ -113,7 +112,7 @@
 
 @media all and (max-width: 600px) {
 	.project {
-		width: 42%;
+		width: 43%;
 		height: 200px;
 	}
 }

@@ -21,6 +21,7 @@
 	flex-direction: row;
 	align-content: flex-start;
 	/* dont use justify content center as single col */
+	justify-content: space-between;
 	flex-wrap: wrap;
 	flex-grow: 100;
 }
@@ -51,9 +52,6 @@
 }
 
 @media all and (max-width: 1200px) {
-	.app {
-		width: 98%;
-	}
 	.headerDiv {
 		margin: 1rem 1rem 0 1rem;
 	}
