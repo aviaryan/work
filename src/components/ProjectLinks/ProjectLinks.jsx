@@ -18,15 +18,14 @@ export default class ProjectLinks extends Component {
 
 		return (
 			<span className={styles.projectLinks}>
+				{this.props.websites &&
+				websitesDOM}
 
 				{this.props.github &&
 				<a href={this.props.github} target="_blank">
 					<img className={styles.logo} src={pathResolver("/img/github-logo.svg")} />
 				</a>
 				}
-
-				{this.props.websites &&
-				websitesDOM}
 			</span>
 		);
 	}

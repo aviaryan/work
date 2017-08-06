@@ -39,6 +39,7 @@ export default class Project extends Component {
 			<div className={[styles.project, this.props.id].join(' ')}>
 				<div className={this.props.name.length > 20 ? styles.projectTitleSmall : styles.projectTitle}>
 					<span className={styles.projectName}>{this.props.name}</span>
+					<span style={{flexGrow: 100}} />
 					<ProjectLinks {...this.props}/>
 				</div>
 				{this.props.date &&
