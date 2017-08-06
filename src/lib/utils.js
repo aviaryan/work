@@ -53,6 +53,13 @@ export default {
 	},
 
 	/*
+	 * focus on search
+	 */
+	focusSearch: () => {
+		document.getElementById('search').focus();
+	},
+
+	/*
 	 * get domain from link
 	 * https://stackoverflow.com/questions/8498592/extract-hostname-name-from-string
 	 */

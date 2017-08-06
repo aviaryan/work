@@ -39,6 +39,7 @@ export default class App extends Component {
 		let st = store.getState();
 		if (st.search !== undefined && st.search){
 			lib.setSearch(st.search);
+			return; // let setState handle scroll
 		}
 		// scroll state
 		if (st.yOffset !== undefined){
@@ -65,6 +66,14 @@ export default class App extends Component {
 		this.setState({
 			searchText: event.target.value,
 			projects: lib.filterProjects(useState ? this.state.projects : projects, event.target.value)
+		}, () => {
+			lib.focusSearch();
+			// set scroll
+			let st = store.getState();
+			if (st.yOffset !== undefined){
+				window.scrollTo(0, st.yOffset);
+			}
+			store.dispatch({type: 'CLEAR'});
 		});
 	}
 
