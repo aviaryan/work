@@ -1,12 +1,14 @@
 .tag {
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	border: 1px solid lightblue;
 	padding: 0.5rem;
-	margin: 1rem 0.3rem 0.5rem 0;
+	margin: 1rem 0.2rem 0.5rem 0;
 	font-size: 0.8rem;
 	background-color: aliceblue;
+	transition: 0.3s;
 }
 
 .tag:hover {
 	cursor: pointer;
+	box-shadow: inset 0 0 20px lightblue;
 }

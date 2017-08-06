@@ -2,7 +2,7 @@
 	width: 29%;
 	margin-top: 1rem;
 	padding: 1rem 1rem 1rem 1rem;
-	border: 1px solid #7d97ad;
+	border: 0 solid #7d97ad;
 	/** this is tricky, can't rely on justify-content **/
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
@@ -10,6 +10,16 @@
 	/* making height auto may help with mobile issues */
 	display: flex;
 	flex-direction: column;
+	/* https://www.w3schools.com/howto/howto_css_cards.asp */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 0.2rem;
+	opacity: 0.85;
+}
+
+.project:hover {
+	box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+	opacity: 1.0;
 }
 
 .projectTitleSmall, .projectTitle {
@@ -34,11 +44,13 @@
 .projectDate {
 	font-size: 0.8rem;
 	display: inline-block;
+	opacity: 0.85; /* default for non title */
 }
 
 .projectDesc {
 	margin-top: 0.5rem;
 	flex-grow: 100;
+	opacity: 0.75;
 	/*padding: 0.3rem;*/
 	/*border-radius: 1rem;*/
 	/*border: 1px dotted;*/
@@ -46,6 +58,7 @@
 
 .projectDesc:hover {
 	cursor: pointer;
+	opacity: 0.8;
 }
 
 .projectTags {
