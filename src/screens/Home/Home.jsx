@@ -85,14 +85,6 @@ export default class App extends Component {
 		if (projectDOM.length === 0){
 			projectDOM = (<div className={styles.noResults}>No results found</div>);
 		}
-		// if projectDOM.length % 3 == 2, then problem with justify content space between
-		// https://stackoverflow.com/questions/18744164/
-		// need to get current number of columns data
-		// if (projectDOM.length % 3 == 2) {
-		// 	let p = this.state.projects[0];
-		// 	projectDOM.push(<Project style={{height: 0}} key={p.id + "__2"} {...p}/>);
-		// }
-
 		return (
 			<div className={styles.app}>
 				<header className={styles.headerDiv}>
