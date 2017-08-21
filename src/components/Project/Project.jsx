@@ -36,19 +36,21 @@ export default class Project extends Component {
 			<Tag key={t} name={t}/>
 		);
 		return (
-			<div className={[styles.project, this.props.id].join(' ')}>
-				<div className={this.props.name.length > 20 ? styles.projectTitleSmall : styles.projectTitle}>
-					<span className={styles.projectName}>{this.props.name}</span>
-					<span style={{flexGrow: 100}} />
-					<ProjectLinks {...this.props}/>
+			<div className={styles.projectOuter}>
+				<div className={[styles.project, this.props.id].join(' ')}>
+					<div className={this.props.name.length > 20 ? styles.projectTitleSmall : styles.projectTitle}>
+						<span className={styles.projectName}>{this.props.name}</span>
+						<span style={{flexGrow: 100}} />
+						<ProjectLinks {...this.props}/>
+					</div>
+					{this.props.date &&
+					<div className={styles.projectDate}>
+						{this.props.date}
+					</div>
+					}
+					<div className={styles.projectDesc} onClick={this.desClick}>{this.props.desc[0]}</div>
+					<div className={styles.projectTags}>{tagsDOM}</div>
 				</div>
-				{this.props.date &&
-				<div className={styles.projectDate}>
-					{this.props.date}
-				</div>
-				}
-				<div className={styles.projectDesc} onClick={this.desClick}>{this.props.desc[0]}</div>
-				<div className={styles.projectTags}>{tagsDOM}</div>
 			</div>
 		)
 	}
