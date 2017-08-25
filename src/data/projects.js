@@ -503,6 +503,17 @@ let projects = [
 		],
 		tags: ['python', 'backend', 'django'],
 		github: 'https://github.com/iiitv/hackathon-fullstack-server'
+	},
+	{
+		id: 'portfolio',
+		name: 'Portfolio',
+		date: '2017-present',
+		desc: [
+			'My open source projects portfolio. Built using React, React Router and Redux.',
+			'My first open source React project.'
+		],
+		tags: ['webapp', 'react', 'javascript'],
+		github: 'https://github.com/aviaryan/work'
 	}
 ];
 

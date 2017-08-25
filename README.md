@@ -2,7 +2,7 @@
 
 [aviaryan.in/work/](http://aviaryan.in/work/)
 
-My portfolio. Built with React.
+My open source projects portfolio. Built with React.
 
 
 ## Dev
