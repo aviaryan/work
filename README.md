@@ -62,6 +62,11 @@ This is my first React project. I was only able to complete it because of these 
 * `[Redux]` [Redux Official Intro](http://redux.js.org/)
 
 
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines. 😉
+
+
 ## Screenshots
 
 #### Home page Filter
