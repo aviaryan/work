@@ -2,6 +2,18 @@
 
 My portfolio. Built with React.
 
+
+## Screenshots
+
+#### Home page Filter
+
+![search](https://i.imgur.com/X3uZxym.png)
+
+#### Project Detail Page
+
+![detail](https://i.imgur.com/4X6CPGC.png)
+
+
 ## Dev
 
 ```sh
