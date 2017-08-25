@@ -62,7 +62,7 @@
 
 .projectDesc:hover {
 	cursor: pointer;
-	opacity: 0.9;
+	opacity: 0.75; /* barely visible change */
 }
 
 .projectTags {
