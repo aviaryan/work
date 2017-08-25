@@ -19,4 +19,4 @@ git add .
 git commit -m "deploy"
 git push origin gh-pages
 
-git checkout pivot-to-react
+git checkout master
