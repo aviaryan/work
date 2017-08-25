@@ -1,6 +1,7 @@
 {
 	"name": "showcase",
 	"version": "1.0.0",
+	"private": true,
 	"main": "src/index.jsx",
 	"license": "MIT",
 	"dependencies": {

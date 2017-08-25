@@ -9,6 +9,12 @@ yarn install
 yarn start
 ```
 
+## Making it your own
+
+Edit [src/data/projects.js](src/data/projects.js) to customize the projects that are being displayed. 
+That file contains a simple JavaScript JSON Object so it should be very easy to get started.
+
+
 ## Libraries Used
 
 ```sh
