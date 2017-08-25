@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
 	entry: {
 		app: './src/index.jsx',
-		vendor: ['react', 'react-dom', 'geopattern', 'react-router-dom', 'redux']
+		// vendor: ['react', 'react-dom', 'geopattern', 'react-router-dom', 'redux']
 	},
 	module: {
 		loaders: [{
@@ -61,6 +61,7 @@ module.exports = {
 			comments: false
 		}),
 		// vendor: https://webpack.github.io/docs/code-splitting.html#split-app-and-vendor-code
-		new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
+		// new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
+		// no need for vendor optimization as it is very small
 	]
 };
