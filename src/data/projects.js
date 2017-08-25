@@ -513,7 +513,8 @@ let projects = [
 			'My first open source React project.'
 		],
 		tags: ['webapp', 'react', 'javascript'],
-		github: 'https://github.com/aviaryan/work'
+		github: 'https://github.com/aviaryan/work',
+		websites: ['http://aviaryan.in/work']
 	}
 ];
 
