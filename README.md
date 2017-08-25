@@ -7,11 +7,11 @@ My portfolio. Built with React.
 
 #### Home page Filter
 
-![search](https://i.imgur.com/X3uZxym.png)
+![search](https://i.imgur.com/i9tn6ox.png)
 
 #### Project Detail Page
 
-![detail](https://i.imgur.com/4X6CPGC.png)
+![detail](https://i.imgur.com/8jrgCQk.png)
 
 
 ## Dev
