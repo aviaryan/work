@@ -13,7 +13,7 @@ let projects = [
 		date: '2013-16',
 		github: 'https://github.com/aviaryan/Clipjump',
 		weight: 2,
-		websites: ['https://bit.ly/clipjump'],
+		websites: ['http://clipjump.sourceforge.net'],
 		tags: ['autohotkey', 'clipboard']
 	},
 	{
