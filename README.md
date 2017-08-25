@@ -5,6 +5,16 @@
 My open source projects portfolio. Built with React.
 
 
+## Features
+
+* A completely dynamic portfolio
+* Filter projects by title, tags, time etc
+* Responsive
+* Detail view to show more information about the project
+* Light weight - bundle (JS + CSS) is around 130KB without any compression 
+* Unmatched Awesomeness
+
+
 ## Dev
 
 ```sh
