@@ -115,10 +115,10 @@
 
 @media all and (max-width: 600px) {
 	.projectOuter {
-		height: 252px;
+		height: 282px;
 	}
 	.project {
-		height: 220px;
+		height: 250px;
 		margin: 0 0.35rem 0 0.35rem;
 	}
 }
