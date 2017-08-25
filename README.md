@@ -5,17 +5,6 @@
 My portfolio. Built with React.
 
 
-## Screenshots
-
-#### Home page Filter
-
-![search](https://i.imgur.com/i9tn6ox.png)
-
-#### Project Detail Page
-
-![detail](https://i.imgur.com/8jrgCQk.png)
-
-
 ## Dev
 
 ```sh
@@ -23,7 +12,7 @@ yarn install
 yarn start
 ```
 
-## Making it your own
+## Customizing
 
 Edit [src/data/projects.js](src/data/projects.js) to customize the projects that are being displayed. 
 That file contains a simple JavaScript JSON Object so it should be very easy to get started.
@@ -61,3 +50,15 @@ This is my first React project. I was only able to complete it because of these 
 * `[Setup]` [Resolve jsx extension in Webpack](https://stackoverflow.com/questions/34678314/)
 * `[Setup]` [Using preact](https://preactjs.com/guide/switching-to-preact)
 * `[Redux]` [Redux Official Intro](http://redux.js.org/)
+
+
+## Screenshots
+
+#### Home page Filter
+
+![search](https://i.imgur.com/i9tn6ox.png)
+
+#### Project Detail Page
+
+![detail](https://i.imgur.com/8jrgCQk.png)
+
