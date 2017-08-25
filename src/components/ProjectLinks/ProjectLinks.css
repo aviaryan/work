@@ -1,6 +1,7 @@
 .projectLinks {
 	/* always show in one line */
 	white-space: nowrap;
+	opacity: 0.54;
 }
 
 .logo {

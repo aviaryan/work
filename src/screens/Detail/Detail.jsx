@@ -30,10 +30,10 @@ export default class ProjectDetail extends Component {
 	}
 
 	componentDidMount() {
-		let pattern = patternGen(this.state.project.name);
-		document.getElementsByClassName(styles.name)[0].style.color = ldColor(pattern.color, -90);
-		// document's title
-		document.title = this.state.project.name + ' · ' + config.title;
+		// let pattern = patternGen(this.state.project.name);
+		// document.getElementsByClassName(styles.name)[0].style.color = ldColor(pattern.color, -90);
+		// // document's title
+		// document.title = this.state.project.name + ' · ' + config.title;
 	}
 
 	render() {
@@ -44,9 +44,13 @@ export default class ProjectDetail extends Component {
 				<Page404/>
 			);
 		}
+		// color (state)
+		this.state.color = patternGen(this.state.project.name).color;
+		let topColor = ldColor(this.state.color, -50);
+		let tagColor = ldColor(this.state.color, 15);
 		// tags and websites
 		let tagsDOM = project.tags.map((t) =>
-			<Tag key={t} name={t} clickListener={this.tagClick}/>
+			<Tag key={t} name={t} clickListener={this.tagClick} color={tagColor}/>
 		);
 		let websitesDOM = [];
 		if (project.websites) {
@@ -68,7 +72,7 @@ export default class ProjectDetail extends Component {
 		// render
 		return (
 			<div className={[appStyles.app, styles.page].join(' ')}>
-				<div className={styles.name}>
+				<div className={styles.name} style={{color: topColor}}>
 					<a href="#" className={styles.backLink}>←</a>
 					{project.name}
 				</div>

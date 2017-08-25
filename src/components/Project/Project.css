@@ -2,26 +2,26 @@
 	width: 33%;
 	padding: 0;
 	margin-top: 1rem;
-	height: 202px;
+	height: 232px; /* max 4 lines */
 }
 
 .project {
 	margin: 0 0.4rem 0 0.4rem;
 	padding: 16px 1rem 16px 1rem;
 	border: 0 solid #7d97ad;
-	height: 170px;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	/* https://www.w3schools.com/howto/howto_css_cards.asp */
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 	transition: 0.4s;
-	border-radius: 0.2rem;
-	opacity: 0.88;
+	/*border-radius: 0.2rem;*/
+	/*opacity: 0.88;*/
 }
 
 .project:hover {
-	box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
-	opacity: 1.0;
+	/*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);*/
+	/*opacity: 1.0;*/
 	transition-delay:0.2s;
 }
 
@@ -48,12 +48,13 @@
 	font-size: 0.8rem;
 	display: inline-block;
 	opacity: 0.85; /* default for non title */
+	margin-top: 8px;
 }
 
 .projectDesc {
 	margin-top: 0.5rem;
 	flex-grow: 100;
-	opacity: 0.75;
+	opacity: 0.7;
 	/*padding: 0.3rem;*/
 	/*border-radius: 1rem;*/
 	/*border: 1px dotted;*/
@@ -61,11 +62,12 @@
 
 .projectDesc:hover {
 	cursor: pointer;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .projectTags {
 	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .projectLinks {
@@ -100,10 +102,10 @@
 
 @media all and (max-width: 820px) {
 	.projectOuter {
-		height: 212px;
+		height: 242px;
 	}
 	.project {
-		height: 180px;
+		height: 210px;
 	}
 	.projectTitle, .projectTitleSmall {
 		min-height: unset;
@@ -113,10 +115,10 @@
 
 @media all and (max-width: 600px) {
 	.projectOuter {
-		height: 232px;
+		height: 252px;
 	}
 	.project {
-		height: 200px;
+		height: 220px;
 		margin: 0 0.35rem 0 0.35rem;
 	}
 }
@@ -124,10 +126,10 @@
 @media all and (max-width: 550px) {
 	.projectOuter {
 		width: 100%;
-		height: 202px;
+		height: 222px;
 	}
 	.project { /* single col*/
-		height: 170px;
+		height: 190px;
 		max-width: 85%;
 		margin: 0 auto 0 auto;
 	}
@@ -141,9 +143,9 @@
 
 @media all and (max-width: 350px) {
 	.projectOuter {
-		height: 222px;
+		height: 232px;
 	}
 	.project {
-		height: 190px;
+		height: 200px;
 	}
 }
