@@ -515,6 +515,39 @@ let projects = [
 		tags: ['webapp', 'react', 'javascript'],
 		github: 'https://github.com/aviaryan/work',
 		websites: ['http://aviaryan.in/work']
+	},
+	{
+		id: 'alfred-clc',
+		name: 'Alfred CLC',
+		date: '2017',
+		desc: [
+			'Powerful calculator for Alfred. Supports advanced expressions and unit conversions.'
+		],
+		tags: ['alfred', 'scripting'],
+		github: 'https://github.com/aviaryan/alfred-clc',
+		websites: ['https://www.alfredforum.com/topic/10652-clc-powerful-calculator-for-alfred/']
+	},
+	{
+		id: 'alfred-google-search',
+		name: 'Alfred Google Search',
+		date: '2017',
+		desc: [
+			'Alfred workflow to do inline google searches (open URL or copy to clipboard).'
+		],
+		tags: ['alfred', 'scripting'],
+		github: 'https://github.com/aviaryan/alfred-google-search',
+		websites: ['https://www.alfredforum.com/topic/10674-google-inline-search-open-url-copy-to-clipboard/']
+	},
+	{
+		id: 'gsearch',
+		name: 'Google Search API',
+		date: '2017',
+		desc: [
+			'Google Search unofficial API for Python with no external dependencies.',
+			'Full Unicode support and works with Python 2 & 3.'
+		],
+		tags: ['python', 'scraping', 'pip'],
+		github: 'https://github.com/aviaryan/python-gsearch',
 	}
 ];
 
