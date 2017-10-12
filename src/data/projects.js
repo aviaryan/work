@@ -153,6 +153,7 @@ let projects = [
 		id: 'udportfolio',
 		name: 'Simple Portfolio',
 		date: '2017',
+		weight: -1,
 		desc: ['A simple, lightweight, responsive portfolio design.'],
 		tags: ['website'],
 		github: 'https://github.com/aviaryan/ud-portfolio',
@@ -542,6 +543,7 @@ let projects = [
 		id: 'gsearch',
 		name: 'Google Search API',
 		date: '2017',
+		weight: 1,
 		desc: [
 			'Google Search unofficial API for Python with no external dependencies.',
 			'Full Unicode support and works with Python 2 & 3.'

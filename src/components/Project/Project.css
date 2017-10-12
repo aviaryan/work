@@ -54,7 +54,7 @@
 .projectDesc {
 	margin-top: 0.5rem;
 	flex-grow: 100;
-	opacity: 0.7;
+	opacity: 0.65;
 	/*padding: 0.3rem;*/
 	/*border-radius: 1rem;*/
 	/*border: 1px dotted;*/
@@ -62,7 +62,7 @@
 
 .projectDesc:hover {
 	cursor: pointer;
-	opacity: 0.75; /* barely visible change */
+	opacity: 0.8; /* barely visible change */
 }
 
 .projectTags {
