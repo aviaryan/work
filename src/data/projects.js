@@ -174,7 +174,7 @@ let projects = [
 		desc: ['Commandline-line app in Go to interact with appbase.io and import data from various databases to ElasticSearch.',
 			'Source databases like Postgres, Mongo, MySQL, MSSQL etc are supported.'],
 		tags: ['golang', 'cli'],
-		weight: 2,
+		weight: 1,
 		github: 'https://github.com/appbaseio/abc'
 	},
 	{
@@ -228,8 +228,11 @@ let projects = [
 	{
 		id: 'sub-notebook',
 		name: 'Sublime Notebook',
-		date: '2017',
-		desc: ['Sublime Notebook is an attempt to use Sublime Text as a complete note taking application.'],
+		date: '2017-present',
+		desc: [
+			'Sublime Notebook is an attempt to use Sublime Text as a complete note taking application.',
+			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
+		],
 		tags: ['sublime-text', 'python'],
 		github: 'https://github.com/aviaryan/SublimeNotebook',
 		websites: ['https://medium.com/aviaryan/sublime-notebook-an-attempt-to-use-sublime-text-as-my-note-taking-application-b8d846c47905#.hy8alq2ip']
@@ -550,6 +553,28 @@ let projects = [
 		],
 		tags: ['python', 'scraping', 'pip'],
 		github: 'https://github.com/aviaryan/python-gsearch',
+	},
+	{
+		id: 'vscodenotebook',
+		name: 'VSCode Notebook',
+		date: '2018-present',
+		weight: 1,
+		desc: [
+			'VSCode Notebook is an attempt to use VSCode as a complete note taking application.',
+			'It comes with all sorts of cool features like note searching, hierarchical organization, password encryption, cloud sync and git backups.'
+		],
+		tags: ['python', 'vscode'],
+		github: 'https://github.com/aviaryan/VSCodeNotebook',
+	},
+	{
+		id: 'chattt',
+		name: 'Chattt',
+		date: '2018',
+		desc: [
+			'Chat without leaving your terminal'
+		],
+		tags: ['javascript', 'npm', 'cli'],
+		github: 'https://github.com/aviaryan/chattt',
 	}
 ];
 
