@@ -6,7 +6,7 @@ export default class Search extends Component {
 	render() {
 		return (
 			<input type="search" id="search" placeholder="Filter (e.g. 'backend python')"
-						 autoComplete="off" spellCheck="false"
+						 autoComplete="off" spellCheck="false" value={this.props.value}
 						 className={styles.search} onChange={this.props.changeHandler} autoFocus="autofocus"/>
 		)
 	}

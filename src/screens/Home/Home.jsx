@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
 import GeoPattern from 'geopattern'
 
 import Search from '../../components/Search/Search'
@@ -8,11 +9,12 @@ import styles from './Home.css'
 
 import lib from '../../lib/utils'
 import projects from '../../data/projects'
-import store from '../../lib/state'
+// import store from '../../lib/state'
 import config from '../../data/config'
+import {setScroll, unsetScroll, setSearch} from '../../actions'
 
 
-export default class App extends Component {
+class Home extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -62,7 +64,9 @@ export default class App extends Component {
 
 	inputChange(event) {
 		// something was added in the filter. We had AND matching right now.
-		let useState = (event.target.value.indexOf(this.state.searchText) == 0);
+		// let useState = (event.target.value.indexOf(this.state.searchText) == 0);
+		this.props.setSearch(event.target.value);
+
 		this.setState({
 			searchText: event.target.value,
 			projects: lib.filterProjects(useState ? this.state.projects : projects, event.target.value)
@@ -89,7 +93,7 @@ export default class App extends Component {
 			<div className={styles.app}>
 				<header className={styles.headerDiv}>
 					<Header/>
-					<Search changeHandler={this.inputChange}/>
+					<Search value={this.props.search} changeHandler={this.inputChange}/>
 				</header>
 				<div className={styles.content}>
 					{projectDOM}
@@ -105,3 +109,20 @@ export default class App extends Component {
 		)
 	}
 }
+
+const mapStateToProps = state => {
+	return {
+		search: state.search,
+		scroll: state.scroll
+	}
+}
+
+const mapDispatchToProps = dispatch => {
+	return {
+		setScroll: pos => dispatch(setScroll(pos)),
+		unsetScroll: () => dispatch(unsetScroll()),
+		setSearch: term => dispatch(setSearch(term))
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

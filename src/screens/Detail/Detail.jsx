@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
 
 import lib from '../../lib/utils'
 import appStyles from '../Home/Home.css'
@@ -6,13 +7,13 @@ import styles from './Detail.css'
 import Page404 from '../Page404/Page404'
 import Tag from '../../components/Tag/Tag'
 import GitHubStar from '../../components/GitHubStar/GitHubStar'
-import state from '../../lib/state'
+// import state from '../../lib/state'
 import patternGen from '../../lib/pattern'
 import ldColor from '../../lib/ligthenDarkenColor'
 import config from '../../data/config'
 
 
-export default class ProjectDetail extends Component {
+class ProjectDetail extends Component {
 
 	constructor(props){
 		super(props);
@@ -103,3 +104,5 @@ export default class ProjectDetail extends Component {
 		);
 	}
 }
+
+export default connect()(ProjectDetail)
