@@ -2,9 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
+import registerSW from './lib/loadSW';
+
 import Home from './screens/Home/Home'
 import Detail from './screens/Detail/Detail'
 import styles from './index.css'
+
+// service worker ftw
+registerSW();
 
 ReactDOM.render(
 	<Router>
