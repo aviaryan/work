@@ -5,6 +5,7 @@
 !.gitignore
 !index.html
 !.nojekyll
+!sw.js
 # un-ignore directories
 !*/
 # ignore directories
