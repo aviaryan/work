@@ -11,7 +11,7 @@ My open source projects portfolio. Built with React.
 * Filter projects by title, tags, time etc
 * Responsive
 * Detail view to show more information about the project
-* Light weight - bundle (JS + CSS) is around 130KB without any compression 
+* Light weight - bundle (JS + CSS) is around 130KB without any compression
 * Unmatched Awesomeness
 
 
@@ -22,9 +22,16 @@ yarn install
 yarn start
 ```
 
+For deploying
+
+```sh
+yarn build
+./deploy.sh
+```
+
 ## Customizing
 
-Edit [src/data/projects.js](src/data/projects.js) to customize the projects that are being displayed. 
+Edit [src/data/projects.js](src/data/projects.js) to customize the projects that are being displayed.
 That file contains a simple JavaScript JSON Object so it should be very easy to get started.
 
 
@@ -40,7 +47,7 @@ GeoPattern
 ## Deployment
 
 Run `yarn build` to generate bundle files with all the dependencies.
- 
+
 Then use the `deploy.sh` script to deploy them to `gh-pages` branch.
 
 
