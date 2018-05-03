@@ -7,6 +7,7 @@ rm -rf deploy/
 mkdir -p deploy
 cp -f index.html deploy/
 cp -f sw.js deploy/
+cp -f manifest.json deploy/
 mkdir -p deploy/dist
 cp -fR dist/ deploy/dist/
 mkdir -p deploy/img
