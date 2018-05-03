@@ -6,6 +6,7 @@
 !index.html
 !.nojekyll
 !sw.js
+!manifest.json
 # un-ignore directories
 !*/
 # ignore directories
