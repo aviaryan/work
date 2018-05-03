@@ -1,0 +1,16 @@
+{
+	"short_name": "aviaryan-portfolio",
+	"name": "Avi Aryan's Portfolio",
+	"icons": [
+		{
+			"src": "img/profile.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/index.html",
+	"display": "standalone",
+	"orientation": "landscape",
+	"theme_color": "#BAAFE0",
+	"background_color": "#000000"
+}
