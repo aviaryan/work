@@ -7,8 +7,8 @@ var filesToCache = [
 
 // only work when deployed
 if (self.registration.scope.indexOf("localhost") < 0) {
-	filesToCache.append('dist/styles.css');
-	filesToCache.append('dist/vendor.bundle.js');
+	filesToCache.push('dist/styles.css');
+	filesToCache.push('dist/vendor.bundle.js');
 }
 
 const version = '1.0';
